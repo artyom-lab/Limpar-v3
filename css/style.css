@@ -14,9 +14,11 @@ body {
         margin-left: -280px; } }
   @media (max-width: 991.98px) {
     body.menubar-1 {
-      transform: translateX(280px); }
+      overflow: hidden; }
       body.menubar-1 .section {
-        pointer-events: none; } }
+        pointer-events: none; }
+      body.menubar-1 .sidebar-1, body.menubar-1 .sidebar-top {
+        transform: translateX(280px); } }
 
 * {
   outline: none !important; }
@@ -92,9 +94,6 @@ a {
   padding: 0;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   background: #3c505a !important; }
-  @media (max-width: 991.98px) {
-    .navbar {
-      position: absolute; } }
 
 .avatar {
   width: 30px;

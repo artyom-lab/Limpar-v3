@@ -40,10 +40,12 @@ body
 			.sidebar-1
 				margin-left: -280px
 		@media (max-width: 991.98px)
-			// overflow: hidden
-			transform: translateX(280px)
+			overflow: hidden
+			// transform: translateX(280px)
 			.section
 				pointer-events: none
+			.sidebar-1, .sidebar-top
+				transform: translateX(280px)
 
 * 
 	outline: none !important
@@ -113,8 +115,8 @@ a
 	padding: 0
 	box-shadow: $box
 	background: $color-navbar !important
-	@media (max-width: 991.98px)
-		position: absolute
+	// @media (max-width: 991.98px)
+		// position: absolute
 
 .avatar
 	width: 30px
