@@ -46,7 +46,6 @@ a {
   @media (max-width: 991.98px) {
     .sidebar-1 {
       position: fixed;
-      max-height: 100vh;
       left: auto;
       right: 100%; } }
   .sidebar-1 .sidebar-bottom {
