@@ -1421,9 +1421,6 @@ h4, .h4 {
   top: -34px;
   padding: 0;
   z-index: 1029; }
-  @media (max-width: 991.98px) {
-    .select2-container--open .select2-dropdown {
-      transform: translateX(-280px); } }
   .select2-container--open .select2-dropdown .select2-search--dropdown {
     padding: 0; }
     .select2-container--open .select2-dropdown .select2-search--dropdown .select2-search__field {
@@ -1477,9 +1474,5 @@ h4, .h4 {
   .form-calendar:focus {
     box-shadow: none;
     border: 1px solid #d7d8d9; }
-
-@media (max-width: 991.98px) {
-  .daterangepicker {
-    left: -265px !important; } }
 
 /*# sourceMappingURL=style.css.map */
