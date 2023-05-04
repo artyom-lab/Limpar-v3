@@ -1475,4 +1475,9 @@ h4, .h4 {
     box-shadow: none;
     border: 1px solid #d7d8d9; }
 
+.daterangepicker {
+  left: 20px !important; }
+  .daterangepicker:before, .daterangepicker:after {
+    display: none; }
+
 /*# sourceMappingURL=style.css.map */

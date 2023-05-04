@@ -41,7 +41,6 @@ body
 				margin-left: -280px
 		@media (max-width: 991.98px)
 			overflow: hidden
-			// transform: translateX(280px)
 			.section
 				pointer-events: none
 			.sidebar-1, .sidebar-top
@@ -115,8 +114,6 @@ a
 	padding: 0
 	box-shadow: $box
 	background: $color-navbar !important
-	// @media (max-width: 991.98px)
-		// position: absolute
 
 .avatar
 	width: 30px
@@ -1470,8 +1467,6 @@ h4, .h4
 		top: -34px
 		padding: 0
 		z-index: 1029
-		// @media (max-width: 991.98px)
-		// 	// transform: translateX(-280px)
 		.select2-search--dropdown
 			padding: 0
 			.select2-search__field
@@ -1529,5 +1524,6 @@ h4, .h4
 		border: 1px solid $color-selectize
 
 .daterangepicker 
-	@media (max-width: 991.98px)
-		// left: -265px !important
+	left: 20px !important
+	&:before, &:after
+		display: none
