@@ -1,0 +1,1532 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap')
+
+$transition: .3s
+$box: 0 1px 1px rgba(0, 0, 0, .1)
+$box2: 0px 1px 3px 0px rgba(0,0,0,0.35)
+
+$color-navbar: #3c505a
+$color-border: #dcdcdc
+$color-white: #FFF
+$color-black: #000
+$color-black-2: #212529
+$color-sidebar: #f9f9f9
+$color-scroll: #F1F1F6
+$color-gray: #7d7d8e
+$color-dashboard: #3c4257
+$color-h: #50505c
+$color-blue: #0086e5
+$color-blue-2: #0081ff
+$color-plus: #2c8bf3
+$color-red: #f42633
+$color-dark: #494954
+$color-selectize: #d7d8d9
+$color-green: #1eb100
+$color-pink: #ee1c3f
+$color-checked: #4788fd
+$color-link: #0074e1
+$color-verified: #09ac59
+
+body
+	font-family: 'Roboto', sans-serif
+	font-size: 12px
+	background-color: $color-sidebar
+	min-height: 100vh
+	transition: $transition
+	padding-top: 62px
+	display: flex
+	&.menubar-1
+		@media (min-width: 992px)
+			padding-left: 0
+			.sidebar-1
+				margin-left: -280px
+		@media (max-width: 991.98px)
+			// overflow: hidden
+			transform: translateX(280px)
+			.section
+				pointer-events: none
+
+* 
+	outline: none !important
+
+img
+	max-width: 100%
+	height: auto
+
+a 
+	text-decoration: none !important
+	transition: $transition
+
+.sidebar-1, .navbar, .content
+	transition: $transition
+
+.sidebar-1
+	width: 280px
+	min-width: 280px
+	top: 62px
+	bottom: 0
+	left: 0
+	background-color: $color-sidebar
+	display: flex
+	flex-direction: column
+	box-shadow: $box
+	z-index: 1020
+	@media (max-width: 991.98px)
+		position: fixed
+		max-height: 100vh
+		left: auto
+		right: 100%
+	.sidebar-bottom
+		flex-grow: 1
+		overflow: auto
+		padding-bottom: 130px
+		border-right: 1px solid $color-border
+		&::-webkit-scrollbar
+			display: none
+
+.sidebar-top
+	background: $color-navbar
+	padding: 13px 15px
+	font-size: 24px
+	font-weight: 900
+	width: 280px
+	transition: $transition
+	@media (max-width: 991.98px)
+		margin-left: -215px
+	@media (max-width: 575.98px)
+		margin-left: -230px
+
+.art
+	display: flex
+	padding: 13px 40px 13px 15px
+	@media (max-width: 575.98px)
+		padding-right: 15px
+
+.content
+	padding: 25px 40px 80px
+	@media (max-width: 575.98px)
+		padding: 15px 15px 80px
+	@media (min-width: 1950px)
+		max-width: 1620px
+		margin-left: auto
+		margin-right: auto
+
+.navbar
+	padding: 0
+	box-shadow: $box
+	background: $color-navbar !important
+	@media (max-width: 991.98px)
+		position: absolute
+
+.avatar
+	width: 30px
+	height: 30px
+	border-radius: 100px
+	background-color: $color-white
+	background-size: 15px 15px
+	background-repeat: no-repeat
+	background-position: center center
+	&:hover 
+		opacity: .6
+
+.sandwich
+	color: $color-white
+	display: block
+	cursor: pointer
+	padding: 0
+	border: 0
+	background: transparent
+	transition: $transition
+	&:before, &:after
+		content: ''
+	span, &:after
+		margin-top: 4px
+	span, &:before, &:after
+		width: 20px
+		display: block
+		transition: $transition
+		transform-origin: left center
+		border-top: 2px solid
+	&.active
+		&:before
+			transform: translateX(3px) translateY(-1px) rotate(45deg)
+		span
+			width: 0
+			opacity: 0
+		&:after
+			transform: translateX(3px) translateY(1px) rotate(-45deg)
+	&:hover 
+		opacity: .8
+.menubar-1
+	.sidebar-top
+		margin-left: -205px
+		@media (max-width: 991.98px)
+			margin-left: -280px
+
+.scroll-wrap
+	flex-grow: 1
+	flex-basis: 0
+	display: flex
+	flex-direction: column
+	overflow: hidden
+	min-height: 110px
+.scroll-wrap-2
+	min-height: 218px
+.scroll
+	height: 100%
+	overflow: auto
+	flex-grow: 1
+	padding-right: 15px
+	&::-webkit-scrollbar
+		width: 4px
+		height: 4px
+	&::-webkit-scrollbar-track
+		background-color: transparent
+		border-radius: 2px
+	&::-webkit-scrollbar-thumb
+		background-color: $color-scroll
+		border-radius: 2px
+.block-wrap
+	margin-top: -15px
+	margin-bottom: -15px
+
+.logo
+	color: $color-white
+	&:hover 
+		color: $color-white
+		opacity: .6
+
+.form-search
+	position: relative
+	justify-content: flex-end
+	@media (max-width: 359.98px)
+		display: none
+	.search
+		transition: $transition
+		position: absolute
+		border: none
+		color: #4f4f4f 
+		top: 0
+		right: 0
+		bottom: 0
+		padding: 0
+		font-size: 14px
+		cursor: pointer
+		background: $color-white
+		text-align: center
+		line-height: 30px
+		border-radius: 100px
+		&:before
+			padding: 8px
+			&:hover
+				opacity: .6
+	.input-search
+		border-radius: 100px
+		transition: $transition
+		height: 30px
+		padding: 0 
+		width: 30px
+		border: 0
+		box-shadow: none !important
+	&.open .input-search
+		width: 90%
+		transition: $transition
+		padding: 6px 32px 6px 12px	
+
+.accordion-wrap
+	.dashboard
+		font-size: 14px
+		font-weight: 900
+		color: $color-dashboard
+		text-transform: uppercase
+		&:hover 
+			opacity: .6
+
+.block
+	padding: 14px 15px
+	color: $color-dashboard
+	border-bottom: 1px solid $color-border
+
+.return
+	color: $color-gray
+	font-weight: 300
+	display: inline-block
+	font-size: 12px
+	.fa-chevron-left
+		font-size: 7px
+		margin-right: 2px
+		margin-bottom: 2px
+	&:hover
+		color: $color-gray
+		opacity: .7
+		transform: translateX(-3px)
+
+.dashboard-links
+	font-size: 13px
+	font-weight: 500
+	color: $color-gray
+	a 
+		color: $color-gray
+		&:hover 
+			opacity: .6
+
+.dashboard-links-2
+	font-size: 13px
+	font-weight: 300
+	color: $color-gray
+	a 
+		color: $color-gray
+		&:hover 
+			opacity: .6
+
+.head
+	padding: 9px 40px 11px
+	min-height: 50px
+	background: $color-white
+	border-bottom: 1px solid $color-border
+	@media (max-width: 575.98px)
+		padding: 10px 15px 11px
+
+.head-2
+	background: transparent
+	border-bottom: 0
+
+.gray 
+	color: $color-gray
+.blue 
+	color: $color-blue
+
+h1, .h1
+	font-size: 32px
+	font-weight: bold
+	color: $color-black-2
+	@media (max-width: 767.98px)
+		font-size: 26px
+
+h2, .h2
+	font-size: 24px
+	margin-bottom: 0
+	font-weight: 500
+	color: $color-h
+	@media (max-width: 767.98px)
+		font-size: 18px
+
+h4, .h4
+	font-size: 18px
+	font-weight: 900
+	color: $color-h
+
+.row-2
+	margin-left: -5px
+	margin-right: -5px
+	> [class*="col"]
+		padding-left: 5px
+		padding-right: 5px
+
+.fz-11
+	font-size: 11px
+.fz-12
+	font-size: 12px
+.fz-13
+	font-size: 13px
+.fz-14
+	font-size: 14px
+.fz-18a
+	font-size: 18px
+
+.social-icons
+	a 
+		&:hover 
+			opacity: .6
+
+.dropdown-1
+	.dropdown-toggle
+		background: $color-blue-2
+		color: $color-white
+		font-size: 14px
+		padding: 2.5px 12px
+		border-radius: 100px
+		&:focus 
+			box-shadow: none !important
+	.dropdown-menu
+		top: 50% !important
+		padding: 15px 10px
+		font-size: 12px
+		border-radius: 10px
+		.dropdown-item
+			padding: 4px 14px
+			&:hover
+				opacity: 1
+				font-weight: bold
+			&:active 
+				background: initial
+
+.cart 
+	background: $color-white
+	border: 1px solid $color-border
+	border-radius: 10px
+	padding: 15px 30px
+	@media (max-width: 575.98px)
+		padding: 15px
+
+.cart-2
+	padding: 8px 0
+
+.red-circle
+	display: inline-block
+	width: 13px
+	height: 13px
+	background: $color-red
+	border-radius: 100px
+
+.plus
+	height: 27px
+	width: 27px
+	display: inline-block
+	border-radius: 100px
+	background: $color-plus
+	color: $color-white
+	text-align: center
+	line-height: 27px
+	font-size: 18px
+	&:hover 
+		opacity: .6
+		color: $color-white
+
+.plus-2
+	height: 15px
+	width: 15px
+	line-height: 15px
+	font-size: 13px
+
+.plus-3
+	color: $color-plus !important
+	transform: rotate(45deg)
+
+.table-2
+	min-width: 640px
+	margin-bottom: 8px !important
+	thead
+		th
+			padding: 4px 30px
+			@media (max-width: 1199.98px)
+				padding: 4px 14px
+	tbody
+		tr:not(:last-child)
+			border-bottom: 1px solid $color-border
+		th, td
+			padding: 8px 30px
+			@media (max-width: 1199.98px)
+				padding: 8px 14px
+	tr 
+		padding-left: 18px
+		padding-right: 18px
+		@media (max-width: 575.98px)
+			padding-left: 3px
+			padding-right: 3px
+	.three-points
+		display: inline-block
+		font-size: 14px
+		color: $color-black-2
+		border-radius: 100px
+		height: 20px
+		width: 20px
+		text-align: center
+		&:hover 
+			box-shadow: 0 1px 5px rgba(0, 0, 0, .5)
+
+.modal-content
+	border-radius: 10px
+	color: $color-h
+	.modal-header
+		padding: 24px 32px
+		@media (max-width: 575.98px)
+			padding: 24px 15px
+	.title
+		font-size: 17px
+		font-weight: 900
+	.modal-body
+		padding: 0 32px 32px !important
+		@media (max-width: 575.98px)
+			padding: 0 15px 32px !important
+		.form-control
+			padding: 2px 12px
+			height: 32px
+			margin-bottom: 4px
+			box-shadow: $box
+
+.btn-primary, .btn-outline-danger, .btn-danger
+	border-radius: 100px
+	font-size: 14px
+	padding: 2.5px 12px
+
+.map
+	iframe
+		width: 100%
+
+.location
+	width: 28px
+	height: 28px
+	background-color: #6a8e9f
+	border-radius: 100px
+	background-image: url(../img/social-icon-4.png)
+	background-size: 15px 15px
+	background-repeat: no-repeat
+	background-position: center center
+	&[aria-expanded="true"]
+		background-color: $color-white
+		border: 1px solid #6a8e9f
+		background-image: url(../img/social-icon-4a.png)
+
+.form-control-2
+	padding: 2px 8px
+	height: 32px
+	box-shadow: $box
+	width: 30%
+	font-size: 13px
+	&:focus 
+		box-shadow: none
+	&::-webkit-input-placeholder
+		font-size: 13px
+	&::-moz-placeholder
+		font-size: 13px
+	&:-ms-input-placeholder
+		font-size: 13px
+	@media (max-width: 991.98px)
+		width: 50%
+	@media (max-width: 767.98px)
+		width: 100%
+
+.form-control-3
+	width: 17%
+	@media (max-width: 1199.98px)
+		width: 30%
+	@media (max-width: 991.98px)
+		width: 50%
+	@media (max-width: 767.98px)
+		width: 100%
+
+.form-control-4
+	border: 0
+	border-radius: 0
+	padding: 12px 30px 12px 12px
+	height: 50px
+	border-bottom: 1px solid $color-border
+	font-size: 14px
+	width: 100% !important
+	&:focus 
+		box-shadow: none
+		border-bottom: 1px solid $color-border
+
+.form-search-2
+	position: relative
+	button
+		transition: $transition
+		position: absolute
+		background: none
+		border: none
+		color: $color-black
+		top: 50%
+		transform: translateY(-50%)
+		right: 10px
+		padding: 0
+		font-size: 16px
+		color: #495057
+		&:hover
+			opacity: .6	
+
+.form-textarea
+	height: 90px !important
+	resize: none
+	padding: 8px
+	font-size: 13px
+	&:focus 
+		box-shadow: none
+	@media (max-width: 575.98px)
+		height: 150px !important
+
+.dropdown-2
+	.form-control
+		padding: 2px 8px
+		height: 32px
+		box-shadow: $box
+		width: 30%
+		font-size: 13px
+		transition: none
+		&:focus 
+			box-shadow: none
+			border-color: #ced4da
+		&::-webkit-input-placeholder
+			font-size: 13px
+		&::-moz-placeholder
+			font-size: 13px
+		&:-ms-input-placeholder
+			font-size: 13px
+		@media (max-width: 991.98px)
+			width: 50%
+		@media (max-width: 767.98px)
+			width: 100%
+	.search-dropdown
+		width: 30%
+		margin-top: 0
+		border-top: 0
+		border-color: #ced4da
+		border-radius: 0 0 4px 4px
+		padding: 0
+		transform: translate3d(0px, 32px, 0px) !important
+		box-shadow: $box
+		min-width: auto
+		.search-dropdown-2
+			margin: 0 8px
+			border-top: 1px solid #ced4da
+			padding: 8px 0 14px
+			a 
+				display: block
+				color: $color-gray
+				font-size: 13px
+				font-weight: bold
+				margin-bottom: 6px
+				&:hover 
+					background: $color-sidebar
+		@media (max-width: 991.98px)
+			width: 50%
+		@media (max-width: 767.98px)
+			width: 100%
+	&.show
+		.form-control
+			border-radius: 4px 4px 0 0
+			box-shadow: none
+			border-bottom: 0
+
+.demo 
+	max-width: 360px
+	> li 
+		display: flex
+		align-items: center
+		padding-bottom: 2px
+		&:first-child
+			margin-bottom: 22px
+
+.handle 
+	border: 0
+	width: 10px
+	height: 10px
+	display: inline-block
+	background: transparent
+	background-image: url(../img/lines.png)
+	background-size: 10px 10px
+	background-repeat: no-repeat
+	background-position: center center
+	vertical-align: middle
+	padding: 0
+	margin-right: 4px
+	cursor: ns-resize !important
+	&:before 
+		color: #cad6e2
+
+.addresses, .demo, .gu-mirror
+	.cross
+		width: 10px
+		height: 10px
+		display: inline-block
+		border-radius: 100px
+		background-color: $color-red
+		background-image: url(../img/cross.png)
+		background-size: 6px 6px
+		background-repeat: no-repeat
+		background-position: center center
+		&:hover 
+			opacity: .6
+	.cross-bigger
+		width: 14px
+		height: 14px
+
+.gu-transit
+	opacity: 0.2
+
+.gu-mirror
+	font-size: 13px
+	color: $color-gray
+	display: flex
+	align-items: center
+	position: fixed
+	background-color: $color-sidebar
+	pointer-events: none
+	z-index: 9999
+	opacity: .8
+
+.dropdown-2
+	.dropdown-toggle
+		&:after 
+			display: none
+		&[aria-expanded="true"]
+			box-shadow: 0 1px 5px rgba(0, 0, 0, .5)
+	.dropdown-menu
+		top: 8px !important
+		padding: 6px
+		font-size: 13px
+		border-radius: 4px
+		min-width: 50px
+		box-shadow: 0 0 7px rgba(0, 0, 0, .3)
+		border: 0
+		position: relative
+		&:after 
+			content: ""
+			position: absolute
+			bottom: 100%
+			right: 0%
+			border: 5px solid transparent
+			border-bottom: 5px solid $color-white
+			transform: translateX(-50%) rotate(0deg)
+		.dropdown-item
+			padding: 4px 14px
+			&:hover
+				opacity: 1
+			&:active 
+				background: initial
+
+.dropdown-3
+	.dropdown-menu
+		top: 4px !important
+		&:after 
+			display: none
+
+.table-2 
+	tbody 
+		tr
+			&:nth-last-child(1), &:nth-last-child(2)
+				.dropdown-2
+					.dropdown-menu
+						top: -8px !important
+						&:after 
+							content: ""
+							position: absolute
+							top: 100%
+							right: 0%
+							border: 5px solid transparent
+							border-bottom: 5px solid $color-white
+							transform: translateX(-50%) rotate(180deg)
+
+// people-index
+
+.table-3 
+	input[type="checkbox"]
+		display: none
+		~ .fa-check
+			padding: 3px
+			font-size: 9px
+			color: $color-white
+			cursor: pointer
+			border: 1px solid #ced4da
+			border-radius: 3px
+		&:checked
+			~ .fa-check
+				transition: $transition
+				color: $color-white
+				background: $color-blue-2
+	.th-input 
+		display: inline-block
+		padding-right: 4px
+	.th-name 
+		padding-left: 4px
+
+.refine 
+	color: $color-dark
+	.input-refine
+		font-size: 13px
+		font-weight: bold
+		border-radius: 10px
+		height: 32px
+		&:focus
+			box-shadow: none
+
+.addresses-refine
+	position: relative
+	&:before, &:after
+		content: ""
+		position: absolute
+		left: 50%
+		height: 30px
+		border-left: 1px dotted #696969
+		transform: translateX(-50%)
+		z-index: -1
+	&:before
+		top: 100%
+	&:after
+		bottom: 100%
+
+.addresses-refine-2
+	&:after
+		display: none
+	&:before
+		height: 25px
+
+.border-shadow 
+	border: 0
+	box-shadow: $box2
+
+.select-beast
+	~ .selectize-control
+		height: 32px
+		.selectize-input
+			border: 1px solid $color-selectize
+			padding: 8px 50px 8px 12px
+			transition: $transition
+			height: 34px
+			box-shadow: none
+			border-radius: 5px
+			color: $color-dashboard
+			&.focus
+				border-radius: 5px 5px 0 0
+			input
+				&::-webkit-input-placeholder
+					color: $color-dashboard
+					font-weight: normal
+				&::-moz-placeholder
+					color: $color-dashboard
+					font-weight: normal
+				&:-ms-input-placeholder
+					color: $color-dashboard
+					font-weight: normal
+			&:after 
+				display: none
+		.selectize-dropdown
+			color: $color-dashboard
+			border: 1px solid $color-selectize
+			border-radius: 0 0 4px 4px
+			padding: 5px
+			.option 
+				padding-left: 8px
+				padding-right: 8px
+				cursor: pointer
+				border: 1px solid transparent
+				margin-bottom: 2px
+				&:hover, &.active
+					background-color: $color-sidebar
+					border-radius: 5px
+					border: 1px solid $color-selectize
+					font-weight: bold
+
+.selectize-dropdown-content
+	overflow: auto
+	max-height: 190px
+	padding-right: 4px
+	&::-webkit-scrollbar
+		width: 4px
+		height: 4px
+	&::-webkit-scrollbar-track
+		background-color: transparent
+		border-radius: 2px
+	&::-webkit-scrollbar-thumb
+		background-color: $color-dashboard
+		border-radius: 2px
+	.dropdown-item 
+		padding: 5px 7px
+		font-size: 13px
+		&:active 
+			background: #f8f9fa
+		&:hover 
+			font-weight: bold
+
+.form-refine-select
+	position: relative
+	.blue-cross, .cross-bigger
+		transition: $transition
+		position: absolute
+		top: 50%
+		cursor: pointer
+		transform: translateY(-50%)
+		z-index: 100
+		height: 15px
+		width: 15px
+		display: inline-block
+		border-radius: 100px
+		color: $color-white
+		text-align: center
+		line-height: 15px
+		font-size: 13px
+		opacity: 0
+		pointer-events: none
+	&:hover
+		.blue-cross, .cross-bigger
+			opacity: 1
+			pointer-events: initial
+			&:hover 
+				opacity: .8 
+				color: $color-white
+	.blue-cross
+		right: 10px
+		background: $color-plus
+	.cross-bigger
+		right: 30px
+		background-color: $color-red
+		background-image: url(../img/cross.png)
+		background-size: 6.5px 6.5px
+		background-repeat: no-repeat
+		background-position: center center
+
+.artem
+	.form-refine-select
+		display: none
+
+.fa-times
+	font-size: 18px
+	color: $color-black-2
+
+.w-200
+	min-width: 250px
+	a 
+		color: $color-black-2
+		display: block
+		padding: 4px 10px
+		border-radius: 6px
+		margin-bottom: 8px
+		&:hover 
+			background: #f6f9fa
+			font-weight: bold
+
+.section 
+	flex-grow: 1
+	max-width: 100%
+	@media (min-width: 992px)
+		width: calc(100% - 280px)
+
+.table-4 
+	input[type="radio"]
+		display: none
+		~ .fa-check
+			padding: 3px
+			font-size: 9px
+			color: $color-white
+			cursor: pointer
+			border: 1px solid #ced4da
+			border-radius: 100px
+		&:checked
+			~ .fa-check
+				transition: $transition
+				color: $color-white
+				background: $color-blue-2
+
+// TEAMS
+
+.fz-0
+	font-size: 0
+.fz-24
+	font-size: 24px
+
+.black 
+	color: $color-dark
+
+.team-links
+	a 
+		color: $color-dark
+		display: block
+		padding: 6px 6px
+		&:hover, &.active 
+			opacity: 1
+			background: $color-white
+
+.table
+	th, td 
+		vertical-align: middle
+
+.table-teams 
+	@media (max-width: 991.98px)
+		min-width: 840px
+
+.player
+	padding: 2px 8px 0 30px !important
+	text-align: center
+	@media (max-width: 1199.98px)
+		padding: 2px 8px 0 14px !important
+
+.img-player 
+	max-width: 24px
+	max-height: 36px
+
+.img-team1
+	width: 16px
+	height: 16px
+	line-height: 16px
+	margin-right: 4px
+	display: inline-block
+	vertical-align: middle
+	text-align: center
+	img 
+		max-height: 100%
+
+.img-team2
+	width: 21px
+	height: 21px
+	line-height: 21px
+
+.img-team3
+	width: 38px
+	height: 38px
+	line-height: 38px
+
+.w-12
+	display: inline-block
+	min-width: 12px
+
+.red
+	color: $color-red
+.green
+	color: $color-green
+
+.form-select
+	.custom-select
+		background: $color-white url(../img/arrow.png) no-repeat right 9px center/5px 4px
+		padding-top: 4px
+		padding-bottom: 4px
+		padding-right: 18px
+		height: 30px
+		font-size: 12px
+		color: #929292
+		border-radius: 100px
+		cursor: pointer
+		&:focus 
+			box-shadow: none
+
+.acc 
+	padding: 4px 30px 8px
+	@media (max-width: 1199.98px)
+		padding: 4px 14px 8px
+
+.link-roster
+	color: $color-blue-2
+
+.switch-wrap-box
+	.switch-wrap-men
+		cursor: pointer
+		display: inline-flex
+		.lever
+			position: relative 
+			border-radius: 100px
+			margin-left: 0 !important
+			margin-right: 0 !important
+			height: 16px
+			width: 36px
+			border: 1px solid #f0eeee
+			background-color: $color-white
+			box-shadow: inset 0 1px 1px rgba(0, 0, 0, .5) 
+			&:after
+				content: ""
+				position: absolute
+				width: 20px
+				height: 20px
+				margin-top: -10px
+				background-color: $color-blue-2
+				border-radius: 100px
+				left: 0
+				top: 50%
+				transition: $transition
+		input
+			opacity: 0
+			width: 0
+			height: 0
+			position: absolute
+			&:checked ~ .lever
+				&:after
+					left: 16px
+
+.mens-team
+	&.hide
+		display: none
+.womens-team
+	display: none
+	&.show
+		display: block
+
+.addresses-refine-teams
+	font-size: 13px
+	font-weight: bold
+	color: $color-dashboard
+
+.section-teams-hide
+	> .box-search
+		position: relative
+		+ .box-search
+			margin-top: 24px
+			&:before 
+				content: ""
+				position: absolute
+				top: -18px
+				left: 5%
+				height: 13px
+				border-left: 1px dotted $color-dashboard
+				transform: translateX(-50%)
+				z-index: -1
+		&:not(:first-child)
+			display: none
+		.cross-bigger
+			display: none
+
+.select-beast-team
+	.selectize-input 
+		input
+			font-weight: bold
+
+.modal-370
+	max-width: 370px
+
+.input-games
+	height: 24px
+	width: 35px
+	border: 0
+	font-size: 13px
+	margin: auto
+	box-shadow: $box
+	&:focus
+		box-shadow: 0px 1px 3px 0px rgba(0,123,255,0.35)
+
+.row-1
+	margin-left: -8px
+	margin-right: -8px
+	> [class*="col"]
+		padding-left: 8px
+		padding-right: 8px
+
+.table-mini
+	margin-bottom: 8px !important
+	text-align: center
+	thead
+		font-size: 10px
+		th, td
+			padding: 2px 12px
+			border-bottom: 0
+		td 
+			color: $color-gray
+	tbody
+		th, td
+			padding: 3px 
+			.input-games
+				margin: auto
+		tr:not(:last-child)
+			border-bottom: 1px solid $color-border
+	tr
+		td, th
+			&:not(:last-child)
+				border-right: 1px solid $color-border
+
+.d-1500
+	@media (max-width: 1499.98px)
+		display: none !important
+
+.table-games
+	tr 
+		td, th
+			&:first-child
+				width: 240px
+			&:not(:first-child)
+				text-align: center
+
+.minus
+	font-size: 26px
+
+.shapes
+	position: absolute
+	min-height: 170px
+	width: 310px
+	font-size: 14px
+	background: #fcfcfb
+	box-shadow: $box
+	border-radius: 10px
+	top: 22px
+	left: 22px
+	padding: 20px
+	opacity: .98
+	@media (max-width: 575.98px)
+		right: 22px
+		width: auto
+		position: static
+		border-top-left-radius: 0
+		border-top-right-radius: 0
+
+.scroll-block
+	max-height: 204px
+	overflow: auto
+	padding-right: 16px
+	&::-webkit-scrollbar
+		width: 4px
+		height: 4px
+	&::-webkit-scrollbar-track
+		background-color: transparent
+		border-radius: 2px
+	&::-webkit-scrollbar-thumb
+		background-color: $color-scroll
+		border-radius: 2px
+
+.bl-1
+	@media (min-width: 576px)
+		border-left: 1px solid #d5d5d5
+
+.form-select-2
+	.custom-select
+		width: 100%
+		background: $color-white url(../img/arrow-black.png) no-repeat right 9px center/6px 5px
+		padding-top: 2px
+		padding-bottom: 2px
+		padding-right: 18px
+		height: 32px
+		font-size: 13px
+		cursor: pointer
+		&:focus 
+			box-shadow: none
+
+// SUPPORT
+
+.fz-20
+	font-size: 20px
+
+.form-dropdown
+	position: relative
+	width: 100%
+	transition: $transition
+	.form-control
+		padding: 4px 14px
+		height: 45px
+		border-radius: 6px
+		background: $color-white
+		width: 100%	
+		border-color: $color-border
+		transition: none
+		font-size: 13px
+		&:focus
+			box-shadow: none
+	.dropdown-menu 
+		margin-top: 38px
+		position: absolute 	
+		transform: none !important
+	&.show
+		.form-control
+			border-radius: 6px 6px 0 0
+			box-shadow: none
+			border: 1px solid $color-border
+			border-bottom: 0
+	.search-dropdown
+		border-radius: 0 0 6px 6px
+		box-shadow: none
+		border: 1px solid $color-border
+		border-top: 0
+		.loc-border
+			border-top: 1px solid $color-border
+			padding: 8px 0
+			overflow: auto
+			.links-box
+				padding: 0 14px
+				a 
+					display: inline-block
+					padding: 4px 0
+					color: $color-black-2
+					font-size: 13px
+					&:hover 
+						opacity: .7
+
+.search-inside
+	max-height: 320px
+	overflow: auto	
+	&::-webkit-scrollbar
+		width: 4px
+		height: 4px
+	&::-webkit-scrollbar-track
+		background-color: transparent
+		border-radius: 2px
+	&::-webkit-scrollbar-thumb
+		background-color: $color-border
+		border-radius: 2px
+
+.support-box
+	padding: 26px 0
+	min-height: 152px
+	display: flex
+	flex-direction: column
+	@media (max-width: 575.98px)
+		border: 1px solid $color-border
+		&.empty
+			padding: 0
+			min-height: 0
+			border: 0
+
+	&:hover 
+		opacity: .7
+	.img-box
+		display: flex
+		align-items: center
+		justify-content: center
+		margin: auto
+		img 
+			height: 80px
+			width: auto
+	.title
+		font-size: 14px
+		font-weight: bold
+		color: $color-black-2
+
+.col-sm-3 
+	@media (min-width: 576px)
+		.support-box
+			border-bottom: 1px solid $color-border
+			border-right: 1px solid $color-border
+		&:nth-last-child(1), &:nth-last-child(2), &:nth-last-child(3), &:nth-last-child(4)
+			.support-box
+				border-bottom: 0
+		&:nth-child(4n)
+			.support-box
+				border-right: 0 
+
+.list-check
+	margin-bottom: 0
+	padding: 8px 0
+	list-style: none
+	li
+		position: relative
+		padding-left: 18px
+		margin-bottom: 16px
+		a
+			font-size: 16px
+			font-weight: bold
+			color: #0376bb
+			&:hover
+				opacity: .6
+		&:before 
+			content: ''
+			position: absolute
+			top: 6px
+			left: 0
+			width: 9px
+			height: 9px
+			background-color: #e2e2e2
+			border-radius: 100px
+			background-size: cover
+
+// LOGIN
+
+.login-box
+	min-height: 100vh
+	display: flex
+	width: 100%
+	flex-direction: column
+	margin-top: -62px
+	padding: 16px
+	.login
+		max-width: 300px
+		width: 100%
+
+.form-login
+	label 
+		margin-bottom: 0
+		.form-control
+			height: 65px
+			padding: 22px
+			background: $color-white
+			font-size: 13px
+			color: $color-black
+			border-radius: 0
+			border-color: #f4f4f4
+			&::-webkit-input-placeholder
+				color: $color-black
+			&::-moz-placeholder
+				color: $color-black
+			&:-ms-input-placeholder
+				color: $color-black
+			&:focus
+				box-shadow: none
+		&:first-child
+			.form-control
+				border-radius: 8px 8px 0 0
+		&:last-child
+			.form-control
+				border-radius: 0 0 8px 8px
+				box-shadow: $box
+		&:only-child
+			.form-control
+				border-radius: 8px
+
+.btn-continue
+	background: $color-pink
+	border-radius: 100px
+	color: $color-white
+	box-shadow: $box
+	font-size: 16px
+	padding: 12px 16px
+	transition: $transition
+	&:hover 
+		opacity: .8
+		color: $color-white
+	&:focus 
+		box-shadow: none
+
+.check-login
+	font-size: 13px
+	input[type="checkbox"]
+		display: none
+		~ .fa-check
+			padding: 3px 
+			font-size: 8px
+			color: $color-white
+			cursor: pointer
+			margin-right: 4px
+			border: 1px solid #ced4da
+			border-radius: 3px
+		&:checked
+			~ .fa-check
+				transition: $transition
+				background: $color-checked
+
+.a-blue 
+	color: $color-link
+
+.fz-17
+	font-size: 17px
+
+.verified
+	background: #a9fbd1
+	border: 1px solid $color-verified
+	border-radius: 8px
+	padding: 13px 20px
+	text-align: center
+	font-size: 13px
+
+#phone
+	padding: 7px 20px 7px 80px
+
+.iti
+	display: block
+	width: 100%
+	.iti__flag-container
+		.iti__selected-flag
+			padding: 10px 10px 10px 20px
+			&:after 
+				content: ""
+				position: absolute
+				right: 0
+				top: 50%
+				transform: translateY(-50%)
+				width: 1px
+				height: 22px
+				background: $color-white
+		.iti__country-list
+			left: 0
+			font-size: 12px
+			min-width: 245px
+			width: auto
+.iti-mobile .iti--container
+	font-size: 12px
+
+.form-verify
+	.group-wide
+		@media (min-width: 576px)
+			margin-left: -50px
+			margin-right: -50px
+		.label-verify
+			margin-bottom: 0
+			.form-control
+				text-align: center
+				padding: 31.5px 12px
+				border-color: #f4f4f4
+				font-size: 13px
+				border-radius: 0
+				box-shadow: $box
+				@media (max-width: 575.98px)
+					padding: 24px 12px
+				&:first-child
+					border-top-left-radius: 8px
+					border-bottom-left-radius: 8px
+				&:last-child
+					border-top-right-radius: 8px
+					border-bottom-right-radius: 8px
+
+// SELECTIZE
+
+.select2-container
+	display: block
+	width: auto !important
+	.select2-selection--single
+		border: 1px solid $color-selectize
+		padding: 0 50px 0 12px
+		transition: $transition
+		height: 34px
+		.select2-selection__rendered
+			padding-left: 0
+			padding-right: 0
+	.selection
+		display: block
+.select2-container--default .select2-selection--single
+	border-radius: 5px
+	.select2-selection__rendered
+		color: $color-dashboard
+		line-height: 32px
+	.select2-selection__arrow
+		display: none
+.select2-results__options
+	> li:first-child:not([role="alert"])
+		display: none
+.select2-container--open 
+	.select2-dropdown 
+		border: 1px solid $color-selectize
+		border-radius: 5px
+		padding: 4px
+		top: -34px
+		padding: 0
+		z-index: 1029
+		@media (max-width: 991.98px)
+			transform: translateX(-280px)
+		.select2-search--dropdown
+			padding: 0
+			.select2-search__field
+				border: 0
+				background-color: $color-white
+				border-bottom: 1px solid $color-selectize
+				color: $color-dashboard
+				border-radius: 5px 5px 0 0
+				padding: 4px 8px
+				height: 34px	
+		.select2-results
+			padding: 4px
+			.select2-results__options
+				max-height: 194px
+				padding: 0 4px
+				&::-webkit-scrollbar
+					width: 4px
+					height: 4px
+				&::-webkit-scrollbar-track
+					background-color: transparent
+					border-radius: 2px
+				&::-webkit-scrollbar-thumb
+					background-color: $color-dashboard
+					border-radius: 2px	
+				.select2-results__option
+					font-size: 13px
+					color: $color-dashboard
+					background-color: transparent
+				.select2-results__option--highlighted.select2-results__option--selectable
+					background: transparent
+					&:hover, &.select2-results__option--selected
+						background-color: $color-sidebar
+						border-radius: 5px
+						border: 1px solid $color-selectize
+						font-weight: bold
+
+// FOIA
+
+.form-calendar
+	font-size: 13px
+	border-radius: 5px
+	height: 34px
+	border: 1px solid $color-selectize
+	padding: 4 12px
+	color: $color-dashboard
+	cursor: pointer
+	&::-webkit-input-placeholder
+		color: $color-selectize
+	&::-moz-placeholder
+		color: $color-selectize
+	&:-ms-input-placeholder
+		color: $color-selectize
+	&:focus
+		box-shadow: none
+		border: 1px solid $color-selectize
+
+.daterangepicker 
+	@media (max-width: 991.98px)
+		left: -265px !important

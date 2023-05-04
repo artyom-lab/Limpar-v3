@@ -1,0 +1,863 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Limpar</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.css" rel="stylesheet">
+		<link href="https://cdn.tutorialjinni.com/selectize.js/0.12.6/css/selectize.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<header class="navbar navbar-light bg-white fixed-top">
+			<div class="sidebar-top">
+				<div class="row align-items-center">
+					<div class="col">
+						<a class="logo" href="#!">Limpar</a>
+					</div>
+					<div class="col-auto">
+						<button class="sandwich" id="sandwich-1">
+					    <span></span>
+					  </button>
+					</div>
+				</div>
+			</div>
+			<div class="art">
+				<form class="form-inline form-search ml-auto">
+	        <input class="form-control input-search" type="text">
+	        <span class="fas fa-search search"></span>
+	      </form>
+				<a href="#!" class="avatar ml-3" style="background-image: url(img/avatar.png)"></a>
+			</div>
+		</header>
+
+		<aside class="sidebar-1">
+			<div class="sidebar-bottom">
+				<nav class="accordion-wrap">
+					<div class="block">
+						<a href="#!" class="dashboard">Dashboard</a>
+					</div>
+					<div class="accordion" id="accordionExample">
+						<div class="block">
+							<a href="#!" class="dashboard" data-toggle="collapse" data-target="#collapseOne">People</a>
+							<div id="collapseOne" class="collapse show" data-parent="#accordionExample">
+								<div class="my-2 py-1">
+									<a class="return align-middle" href="#!"><i class="fas fa-chevron-left align-middle"></i>Back to Search</a>
+									<div class="row align-items-center dashboard-links mt-2 pt-1">
+										<div class="col">
+											<a href="#!">Employment</a>
+										</div>
+										<div class="col-auto font-weight-bold">(13)</div>
+									</div>
+									<div class="row align-items-center dashboard-links mt-2 pt-1">
+										<div class="col">
+											<a href="#!">Real Estate</a>
+										</div>
+										<div class="col-auto font-weight-bold">(6)</div>
+									</div>
+									<div class="row align-items-center dashboard-links-2 mt-2 pt-1">
+										<div class="col">
+											<a href="#!">Voter Registrations</a>
+										</div>
+										<div class="col-auto font-weight-bold">-</div>
+									</div>
+									<div class="row align-items-center dashboard-links mt-2 pt-1">
+										<div class="col">
+											<a href="#!">Voter History</a>
+										</div>
+										<div class="col-auto font-weight-bold">(14)</div>
+									</div>
+									<div class="row align-items-center dashboard-links mt-2 pt-1">
+										<div class="col">
+											<a href="#!">Campaign Contributions</a>
+										</div>
+										<div class="col-auto font-weight-bold">(3)</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="block">
+							<a href="#!" class="dashboard" data-toggle="collapse" data-target="#collapseTwo">Organizations</a>
+							<div id="collapseTwo" class="collapse" data-parent="#accordionExample">
+								<div class="my-2 py-1">
+									<a class="return align-middle" href="#!"><i class="fas fa-chevron-left align-middle"></i>Back to Search</a>
+									<div class="row align-items-center dashboard-links mt-2 pt-1">
+										<div class="col">
+											<a href="#!">Employment</a>
+										</div>
+										<div class="col-auto font-weight-bold">(13)</div>
+									</div>
+									<div class="row align-items-center dashboard-links mt-2 pt-1">
+										<div class="col">
+											<a href="#!">Real Estate</a>
+										</div>
+										<div class="col-auto font-weight-bold">(6)</div>
+									</div>
+									<div class="row align-items-center dashboard-links-2 mt-2 pt-1">
+										<div class="col">
+											<a href="#!">Voter Registrations</a>
+										</div>
+										<div class="col-auto font-weight-bold">-</div>
+									</div>
+									<div class="row align-items-center dashboard-links mt-2 pt-1">
+										<div class="col">
+											<a href="#!">Voter History</a>
+										</div>
+										<div class="col-auto font-weight-bold">(14)</div>
+									</div>
+									<div class="row align-items-center dashboard-links mt-2 pt-1">
+										<div class="col">
+											<a href="#!">Campaign Contributions</a>
+										</div>
+										<div class="col-auto font-weight-bold">(3)</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="block">
+							<a href="#!" class="dashboard" data-toggle="collapse" data-target="#collapseThree">Geographies</a>
+							<div id="collapseThree" class="collapse" data-parent="#accordionExample">
+								<div class="refine fz-13 pb-4">
+									<div class="text-uppercase font-weight-bold my-3">Refine Geo</div>
+									<div class="row row-2 align-items-center mb-4">
+										<div class="col-4">
+											<div class="addresses addresses-refine addresses-refine-2">
+												<a href="#!" class="cross cross-bigger align-middle"></a>
+												<span class="align-middle ml-1">State</span>
+											</div>
+										</div>
+										<div class="col-8">
+											<div class="section-teams-hide">
+												<div class="box-search">
+													<div class="form-refine-select">
+														<a href="#!" class="cross cross-bigger"></a>
+														<a href="#!" class="blue-cross">+</a>
+														<div class="select-box">
+															<select class="select2">
+																<option value="" hidden>Illinois</option>
+								                <option value="0">Alaska</option>
+								                <option value="1">Alabama</option>
+								                <option value="2">Arkansas</option>
+								                <option value="3">Arizona</option>
+								                <option value="4">California</option>
+								                <option value="5">Colorado</option>
+								                <option value="6">Connecticut</option>
+								                <option value="7">Delaware</option>
+								                <option value="8">Florida</option>
+								                <option value="9">Georgia</option>
+								                <option value="10">Hawaii</option>
+								                <option value="11">Iowa</option>
+								                <option value="12">Idaho</option>
+								                <option value="13">Illinois</option>
+								                <option value="14">Indiana</option>
+								                <option value="15">Kansas</option>
+								                <option value="16">Kentucky</option>
+								                <option value="17">Louisiana</option>
+								                <option value="18">Massachusetts</option>
+								                <option value="19">Maryland</option>
+								                <option value="20">Maine</option>
+								                <option value="21">Michigan</option>
+								                <option value="22">Minnesota</option>
+								                <option value="23">Missouri</option>
+								                <option value="24">Mississippi</option>
+								                <option value="25">Montana</option>
+								                <option value="26">North Carolina</option>
+								                <option value="27">North Dakota</option>
+								                <option value="28">Nebraska</option>
+								                <option value="29">New Hampshire</option>
+								                <option value="30">New Jersey</option>
+								                <option value="31">New Mexico</option>
+								                <option value="32">Nevada</option>
+								                <option value="33">New York</option>
+								                <option value="34">Ohio</option>
+								                <option value="35">Oklahoma</option>
+								                <option value="36">Oregon</option>
+								                <option value="37">Pennsylvania</option>
+								                <option value="38">Rhode Island</option>
+								                <option value="39">South Carolina</option>
+								                <option value="40">South Dakota</option>
+								                <option value="41">Tennessee</option>
+								                <option value="42">Texas</option>
+								                <option value="43">Utah</option>
+								                <option value="44">Virginia</option>
+								                <option value="45">Vermout</option>
+								                <option value="46">Washington</option>
+								                <option value="47">Washington DC</option>
+								                <option value="48">Wisconsin</option>
+								                <option value="49">West Virginia</option>
+								                <option value="50">Wyoming</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form-refine-select mb-3" id="artem">
+										<select class="select-beast" placeholder="Select a Geography Type">
+											<option value="">Select a Geography Type</option>
+											<option value="0">County</option>
+											<option value="1">State House</option>
+											<option value="2">Senate</option>
+											<option value="3">US Congress</option>
+											<option value="4">Zip</option>
+										</select>
+										<a href="#!" class="blue-cross">+</a>
+									</div>
+									<div class="artem">
+										<div class="form-refine-select mb-3">
+											<select class="select-beast" placeholder="County">
+												<option value="">County</option>
+												<option value="1">County 001</option>
+												<option value="2">County 002</option>
+												<option value="3">County 003</option>
+												<option value="4">County 004</option>
+												<option value="5">County 005</option>
+												<option value="6">County 006</option>
+												<option value="7">County 007</option>
+												<option value="8">County 008</option>
+												<option value="9">County 009</option>
+												<option value="10">County 010</option>
+												<option value="11">County 011</option>
+												<option value="12">County 012</option>
+												<option value="13">County 013</option>
+												<option value="14">County 014</option>
+												<option value="15">County 015</option>
+											</select>
+											<a href="#!" class="blue-cross">+</a>
+										</div>
+										<div class="form-refine-select mb-3">
+											<select class="select-beast" placeholder="State House">
+												<option value="">State House</option>
+												<option value="1">State House 001</option>
+												<option value="2">State House 002</option>
+												<option value="3">State House 003</option>
+												<option value="4">State House 004</option>
+												<option value="5">State House 005</option>
+												<option value="6">State House 006</option>
+												<option value="7">State House 007</option>
+												<option value="8">State House 008</option>
+												<option value="9">State House 009</option>
+												<option value="10">State House 010</option>
+												<option value="11">State House 011</option>
+												<option value="12">State House 012</option>
+												<option value="13">State House 013</option>
+												<option value="14">State House 014</option>
+												<option value="15">State House 015</option>
+											</select>
+											<a href="#!" class="blue-cross">+</a>
+										</div>
+										<div class="form-refine-select mb-3">
+											<select class="select-beast" placeholder="Senate">
+												<option value="">Senate</option>
+												<option value="1">Senate 001</option>
+												<option value="2">Senate 002</option>
+												<option value="3">Senate 003</option>
+												<option value="4">Senate 004</option>
+												<option value="5">Senate 005</option>
+												<option value="6">Senate 006</option>
+												<option value="7">Senate 007</option>
+												<option value="8">Senate 008</option>
+												<option value="9">Senate 009</option>
+												<option value="10">Senate 010</option>
+												<option value="11">Senate 011</option>
+												<option value="12">Senate 012</option>
+												<option value="13">Senate 013</option>
+												<option value="14">Senate 014</option>
+												<option value="15">Senate 015</option>
+											</select>
+											<a href="#!" class="blue-cross">+</a>
+										</div>
+										<div class="form-refine-select mb-3">
+											<select class="select-beast" placeholder="US Congress">
+												<option value="">US Congress</option>
+												<option value="1">US Congress 001</option>
+												<option value="2">US Congress 002</option>
+												<option value="3">US Congress 003</option>
+												<option value="4">US Congress 004</option>
+												<option value="5">US Congress 005</option>
+												<option value="6">US Congress 006</option>
+												<option value="7">US Congress 007</option>
+												<option value="8">US Congress 008</option>
+												<option value="9">US Congress 009</option>
+												<option value="10">US Congress 010</option>
+												<option value="11">US Congress 011</option>
+												<option value="12">US Congress 012</option>
+												<option value="13">US Congress 013</option>
+												<option value="14">US Congress 014</option>
+												<option value="15">US Congress 015</option>
+											</select>
+											<a href="#!" class="blue-cross">+</a>
+										</div>
+										<div class="form-refine-select mb-3">
+											<select class="select-beast" placeholder="Zip">
+												<option value="">Zip</option>
+												<option value="1">Zip 001</option>
+												<option value="2">Zip 002</option>
+												<option value="3">Zip 003</option>
+												<option value="4">Zip 004</option>
+												<option value="5">Zip 005</option>
+												<option value="6">Zip 006</option>
+												<option value="7">Zip 007</option>
+												<option value="8">Zip 008</option>
+												<option value="9">Zip 009</option>
+												<option value="10">Zip 010</option>
+												<option value="11">Zip 011</option>
+												<option value="12">Zip 012</option>
+												<option value="13">Zip 013</option>
+												<option value="14">Zip 014</option>
+												<option value="15">Zip 015</option>
+											</select>
+											<a href="#!" class="blue-cross">+</a>
+										</div>
+									</div>
+									<div class="text-uppercase font-weight-bold mt-4 mb-2">Age</div>
+									<div class="row row-2 align-items-center mt-1 font-weight-bold delete-element">
+										<div class="col">
+											<div class="addresses">
+												<a href="#!" class="cross cross-bigger align-middle"></a>
+												<span class="align-middle ml-1">18-24</span>
+											</div>
+										</div>
+										<div class="col-auto">(180,483)</div>
+									</div>
+									<div class="row row-2 align-items-center mt-1 font-weight-bold delete-element">
+										<div class="col">
+											<div class="addresses">
+												<a href="#!" class="cross cross-bigger align-middle"></a>
+												<span class="align-middle ml-1">25-34</span>
+											</div>
+										</div>
+										<div class="col-auto">(209,871)</div>
+									</div>
+									<div class="row row-2 align-items-center mt-1 font-weight-bold delete-element">
+										<div class="col">
+											<div class="addresses">
+												<a href="#!" class="cross cross-bigger align-middle"></a>
+												<span class="align-middle ml-1">35-44</span>
+											</div>
+										</div>
+										<div class="col-auto">(214,765)</div>
+									</div>
+									<div class="row row-2 align-items-center mt-1 font-weight-bold delete-element">
+										<div class="col">
+											<div class="addresses">
+												<a href="#!" class="cross cross-bigger align-middle"></a>
+												<span class="align-middle ml-1">45-54</span>
+											</div>
+										</div>
+										<div class="col-auto">(308,795)</div>
+									</div>
+									<div class="row row-2 align-items-center mt-1 font-weight-bold delete-element">
+										<div class="col">
+											<div class="addresses">
+												<a href="#!" class="cross cross-bigger align-middle"></a>
+												<span class="align-middle ml-1">55-64</span>
+											</div>
+										</div>
+										<div class="col-auto">(178,316)</div>
+									</div>
+									<div class="row row-2 align-items-center mt-1 font-weight-bold delete-element">
+										<div class="col">
+											<div class="addresses">
+												<a href="#!" class="cross cross-bigger align-middle"></a>
+												<span class="align-middle ml-1">65+</span>
+											</div>
+										</div>
+										<div class="col-auto">(198,520)</div>
+									</div>
+									<div class="text-uppercase font-weight-bold mt-5 mb-2">Campaign Contributions</div>
+									<div class="row row-2 align-items-center delete-element mt-1">
+										<div class="col">
+											<div class="addresses">
+												<a href="#!" class="cross cross-bigger align-middle invisible"></a>
+												<span class="align-middle ml-1">$1-$99</span>
+											</div>
+										</div>
+										<div class="col-auto">(180,483)</div>
+									</div>
+									<div class="row row-2 align-items-center delete-element mt-1">
+										<div class="col">
+											<div class="addresses">
+												<a href="#!" class="cross cross-bigger align-middle invisible"></a>
+												<span class="align-middle ml-1">$100-$499</span>
+											</div>
+										</div>
+										<div class="col-auto">(209,871)</div>
+									</div>
+									<div class="row row-2 align-items-center delete-element mt-1">
+										<div class="col">
+											<div class="addresses">
+												<a href="#!" class="cross cross-bigger align-middle invisible"></a>
+												<span class="align-middle ml-1">$500-$999</span>
+											</div>
+										</div>
+										<div class="col-auto">(214,765)</div>
+									</div>
+									<div class="row row-2 align-items-center delete-element mt-1 font-weight-bold">
+										<div class="col">
+											<div class="addresses">
+												<a href="#!" class="cross cross-bigger align-middle"></a>
+												<span class="align-middle ml-1">$1,000-$4,999</span>
+											</div>
+										</div>
+										<div class="col-auto">(308,795)</div>
+									</div>
+									<div class="row row-2 align-items-center delete-element mt-1 font-weight-bold">
+										<div class="col">
+											<div class="addresses">
+												<a href="#!" class="cross cross-bigger align-middle"></a>
+												<span class="align-middle ml-1">$5,000-$9,999</span>
+											</div>
+										</div>
+										<div class="col-auto">(178,316)</div>
+									</div>
+									<div class="row row-2 align-items-center delete-element mt-1">
+										<div class="col">
+											<div class="addresses">
+												<a href="#!" class="cross cross-bigger align-middle invisible"></a>
+												<span class="align-middle ml-1">$10,000+</span>
+											</div>
+										</div>
+										<div class="col-auto">(198,520)</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="block">
+							<a href="#!" class="dashboard" data-toggle="collapse" data-target="#collapseFour">Support</a>
+							<div id="collapseFour" class="collapse" data-parent="#accordionExample">
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</aside>
+
+		<section class="section">
+
+			<div class="head">
+				<div class="row align-items-center">
+					<div class="col-sm mb-2 mb-sm-0">
+						<h2>John A. Smith</h2>
+					</div>
+					<div class="col-sm-auto">
+						<div class="social-icons">
+	              <div class="row row-2 justify-content-sm-end">
+	                <div class="col-auto">
+	                  <a href="#!" class="d-block">
+	                    <img src="img/social-icon-1.png" alt="" width="28">
+	                  </a>
+	                </div>
+	                <div class="col-auto">
+	                  <a href="#!" class="d-block">
+	                    <img src="img/social-icon-2.png" alt="" width="28">
+	                  </a>
+	                </div>
+	                <div class="col-auto d-none d-sm-block">
+	                  <a href="#!" class="d-block">
+	                    <img src="img/social-icon-3.png" alt="" width="28">
+	                  </a>
+	                </div>
+	                <div class="col-auto">
+	                  <a href="#collapse-map" class="d-block location" data-toggle="collapse">
+	                  </a>
+	                </div>
+	                <div class="col-auto">
+	                  <a href="limpar-people.html" class="d-block">
+	                    <img src="img/social-icon-5.png" alt="" width="28">
+	                  </a>
+	                </div>
+	                <div class="col-auto">
+				            <form class="form-inline dropdown dropdown-1">
+				              <button class="btn dropdown-toggle" data-toggle="dropdown">New Factoid</button>
+				              <div class="dropdown-menu dropdown-menu-right">
+				                <a href="#!" class="dropdown-item">Employment</a>
+				                <a href="#!" class="dropdown-item">Real Estate</a>
+				                <a href="#!" class="dropdown-item" data-toggle="modal" data-target="#modal">Voter Registration</a>
+				                <a href="#!" class="dropdown-item">Voter History</a>
+				                <a href="#!" class="dropdown-item">Campaign Contributions</a>
+				                <a href="#!" class="dropdown-item">Etc</a>
+				              </div>
+				            </form>
+	                </div>
+	              </div>
+	            </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="map collapse" id="collapse-map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.472444676542!2d-87.66933088431627!3d41.968665267720326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd22f6dd52bd5%3A0xe4eb6a6bcfb77a46!2zNDc2MSBOIENsYXJrIFN0LCBDaGljYWdvLCBJTCA2MDY0MCwg0KHQqNCQ!5e0!3m2!1sru!2str!4v1597755499723!5m2!1sru!2str" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+
+			<div class="content">
+				<h4>General</h4>
+				<div class="cart gray fz-14">
+					<div class="row pb-2">
+						<div class="col-5 col-md-3 col-xl-2 font-weight-bold">Name</div>
+						<div class="col">John A. Smith</div>
+					</div>
+					<div class="row pb-2">
+						<div class="col-5 col-md-3 col-xl-2 font-weight-bold">DoB</div>
+						<div class="col">July 28, 1978</div>
+					</div>
+					<div class="row pb-2">
+						<div class="col-5 col-md-3 col-xl-2 font-weight-bold">Age</div>
+						<div class="col">41</div>
+					</div>
+					<div class="row pb-2">
+						<div class="col-5 col-md-3 col-xl-2 font-weight-bold">Place of Birth</div>
+						<div class="col">Chicago, IL</div>
+					</div>
+					<div class="row pb-2">
+						<div class="col-5 col-md-3 col-xl-2 font-weight-bold">Hometown</div>
+						<div class="col">Riverside, IL</div>
+					</div>
+					<div class="row pb-2">
+						<div class="col-5 col-md-3 col-xl-2 font-weight-bold">DoD</div>
+						<div class="col">-</div>
+					</div>
+					<div class="row pb-2">
+						<div class="col-5 col-md-3 col-xl-2 font-weight-bold">Bio Source</div>
+						<div class="col font-weight-bold"><a href="#!">The Wall Street Journal</a></div>
+					</div>
+					<div class="row pb-2">
+						<div class="col-5 col-md-3 col-xl-2 font-weight-bold">Bio</div>
+						<div class="col">Lorem ipsum dolor sit amet, graece probatus urbanitas mel ei. Quodsi repudiandae vim eu, labore legendos est ut. In iudico primis insolens per, vim laboramus suscipiantur et.</div>
+					</div>
+					<div class="row pb-2">
+						<div class="col-5 col-md-3 col-xl-2">Primary Address</div>
+						<div class="col">912 West Adams St, Riverside, IL 60546</div>
+					</div>
+					<div class="row pb-2">
+						<div class="col-5 col-md-3 col-xl-2">Additional Addresses</div>
+						<div class="col">847 Montgomery Ave, La Grange, IL 60546</div>
+					</div>
+					<div class="row pb-2">
+						<div class="col-5 col-md-3 col-xl-2"></div>
+						<div class="col">4761 N Clark St, Chicago, IL 60657</div>
+					</div>
+					<div class="row pb-2">
+						<div class="col-5 col-md-3 col-xl-2"></div>
+						<div class="col font-weight-bold"><a href="#!">6 additional addresses</a></div>
+					</div>
+					<div class="row">
+						<div class="col-5 col-md-3 col-xl-2">Political Affiliation</div>
+						<div class="col"><span class="red-circle align-middle mr-1"> </span class="align-middle"><span class="align-middle">Hard Republican</span> <i class="blue fz-11 align-middle font-weight-bold">i</i></div>
+					</div>
+				</div>
+				<div class="row align-items-center mt-5 mb-2">
+					<div class="col">
+						<h4 class="mb-0">Employment <span class="font-weight-normal fz-14">(13)</span></h4>
+					</div>
+					<div class="col-auto"><a href="#!" class="plus">+</a></div>
+				</div>
+				<div class="cart cart-2 gray fz-13 flex-grow-1">
+					<div class="table-responsive">
+						<table class="table table-2 table-borderless">
+							<thead>
+								<tr>
+									<th>Employer</th>
+									<th>Address</th>
+									<th>Job Title</th>
+									<th>Date</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th><a href="#!" class="align-middle">Organization Name</a></th>
+									<td>67483 Washington Ave, Wilmingtonville, IL</td>
+									<td>Job Title</td>
+									<td>Date</td>
+									<td class="text-right text-nowrap">
+										<div class="dropdown dropdown-2">
+											<a href="#!" class="three-points dropdown-toggle" data-toggle="dropdown">&#8226;&#8226;&#8226;</a>
+				              <div class="dropdown-menu dropdown-menu-right">
+				                <a href="#!" class="dropdown-item">Edit</a>
+				                <a href="#!" class="dropdown-item">Delete</a>
+				              </div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><a href="#!" class="align-middle">Organization Name</a></th>
+									<td>67483 Washington Ave, Wilmingtonville, IL</td>
+									<td>Job Title</td>
+									<td>Date</td>
+									<td class="text-right text-nowrap">
+										<div class="dropdown dropdown-2">
+											<a href="#!" class="three-points dropdown-toggle" data-toggle="dropdown">&#8226;&#8226;&#8226;</a>
+				              <div class="dropdown-menu dropdown-menu-right">
+				                <a href="#!" class="dropdown-item">Edit</a>
+				                <a href="#!" class="dropdown-item">Delete</a>
+				              </div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><a href="#!" class="align-middle">Organization Name</a></th>
+									<td>67483 Washington Ave, Wilmingtonville, IL</td>
+									<td>Job Title</td>
+									<td>Date</td>
+									<td class="text-right text-nowrap">
+										<div class="dropdown dropdown-2">
+											<a href="#!" class="three-points dropdown-toggle" data-toggle="dropdown">&#8226;&#8226;&#8226;</a>
+				              <div class="dropdown-menu dropdown-menu-right">
+				                <a href="#!" class="dropdown-item">Edit</a>
+				                <a href="#!" class="dropdown-item">Delete</a>
+				              </div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><a href="#!" class="align-middle">Organization Name</a></th>
+									<td>67483 Washington Ave, Wilmingtonville, IL</td>
+									<td>Job Title</td>
+									<td>Date</td>
+									<td class="text-right text-nowrap">
+										<div class="dropdown dropdown-2">
+											<a href="#!" class="three-points dropdown-toggle" data-toggle="dropdown">&#8226;&#8226;&#8226;</a>
+				              <div class="dropdown-menu dropdown-menu-right">
+				                <a href="#!" class="dropdown-item">Edit</a>
+				                <a href="#!" class="dropdown-item">Delete</a>
+				              </div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><a href="#!" class="align-middle">Organization Name</a></th>
+									<td>67483 Washington Ave, Wilmingtonville, IL</td>
+									<td>Job Title</td>
+									<td>Date</td>
+									<td class="text-right text-nowrap">
+										<div class="dropdown dropdown-2">
+											<a href="#!" class="three-points dropdown-toggle" data-toggle="dropdown">&#8226;&#8226;&#8226;</a>
+				              <div class="dropdown-menu dropdown-menu-right">
+				                <a href="#!" class="dropdown-item">Edit</a>
+				                <a href="#!" class="dropdown-item">Delete</a>
+				              </div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><a href="#!" class="align-middle">Organization Name</a></th>
+									<td>67483 Washington Ave, Wilmingtonville, IL</td>
+									<td>Job Title</td>
+									<td>Date</td>
+									<td class="text-right text-nowrap">
+										<div class="dropdown dropdown-2">
+											<a href="#!" class="three-points dropdown-toggle" data-toggle="dropdown">&#8226;&#8226;&#8226;</a>
+				              <div class="dropdown-menu dropdown-menu-right">
+				                <a href="#!" class="dropdown-item">Edit</a>
+				                <a href="#!" class="dropdown-item">Delete</a>
+				              </div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><a href="#!" class="align-middle">Organization Name</a></th>
+									<td>67483 Washington Ave, Wilmingtonville, IL</td>
+									<td>Job Title</td>
+									<td>Date</td>
+									<td class="text-right text-nowrap">
+										<div class="dropdown dropdown-2">
+											<a href="#!" class="three-points dropdown-toggle" data-toggle="dropdown">&#8226;&#8226;&#8226;</a>
+				              <div class="dropdown-menu dropdown-menu-right">
+				                <a href="#!" class="dropdown-item">Edit</a>
+				                <a href="#!" class="dropdown-item">Delete</a>
+				              </div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><a href="#!" class="align-middle">Organization Name</a></th>
+									<td>67483 Washington Ave, Wilmingtonville, IL</td>
+									<td>Job Title</td>
+									<td>Date</td>
+									<td class="text-right text-nowrap">
+										<div class="dropdown dropdown-2">
+											<a href="#!" class="three-points dropdown-toggle" data-toggle="dropdown">&#8226;&#8226;&#8226;</a>
+				              <div class="dropdown-menu dropdown-menu-right">
+				                <a href="#!" class="dropdown-item">Edit</a>
+				                <a href="#!" class="dropdown-item">Delete</a>
+				              </div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><a href="#!" class="align-middle">Organization Name</a></th>
+									<td>67483 Washington Ave, Wilmingtonville, IL</td>
+									<td>Job Title</td>
+									<td>Date</td>
+									<td class="text-right text-nowrap">
+										<div class="dropdown dropdown-2">
+											<a href="#!" class="three-points dropdown-toggle" data-toggle="dropdown">&#8226;&#8226;&#8226;</a>
+				              <div class="dropdown-menu dropdown-menu-right">
+				                <a href="#!" class="dropdown-item">Edit</a>
+				                <a href="#!" class="dropdown-item">Delete</a>
+				              </div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><a href="#!" class="align-middle">Organization Name</a></th>
+									<td>67483 Washington Ave, Wilmingtonville, IL</td>
+									<td>Job Title</td>
+									<td>Date</td>
+									<td class="text-right text-nowrap">
+										<div class="dropdown dropdown-2">
+											<a href="#!" class="three-points dropdown-toggle" data-toggle="dropdown">&#8226;&#8226;&#8226;</a>
+				              <div class="dropdown-menu dropdown-menu-right">
+				                <a href="#!" class="dropdown-item">Edit</a>
+				                <a href="#!" class="dropdown-item">Delete</a>
+				              </div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><a href="#!" class="align-middle">Organization Name</a></th>
+									<td>67483 Washington Ave, Wilmingtonville, IL</td>
+									<td>Job Title</td>
+									<td>Date</td>
+									<td class="text-right text-nowrap">
+										<div class="dropdown dropdown-2">
+											<a href="#!" class="three-points dropdown-toggle" data-toggle="dropdown">&#8226;&#8226;&#8226;</a>
+				              <div class="dropdown-menu dropdown-menu-right">
+				                <a href="#!" class="dropdown-item">Edit</a>
+				                <a href="#!" class="dropdown-item">Delete</a>
+				              </div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><a href="#!" class="align-middle">Organization Name</a></th>
+									<td>67483 Washington Ave, Wilmingtonville, IL</td>
+									<td>Job Title</td>
+									<td>Date</td>
+									<td class="text-right text-nowrap">
+										<div class="dropdown dropdown-2">
+											<a href="#!" class="three-points dropdown-toggle" data-toggle="dropdown">&#8226;&#8226;&#8226;</a>
+				              <div class="dropdown-menu dropdown-menu-right">
+				                <a href="#!" class="dropdown-item">Edit</a>
+				                <a href="#!" class="dropdown-item">Delete</a>
+				              </div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><a href="#!" class="align-middle">Organization Name</a></th>
+									<td>67483 Washington Ave, Wilmingtonville, IL</td>
+									<td>Job Title</td>
+									<td>Date</td>
+									<td class="text-right text-nowrap">
+										<div class="dropdown dropdown-2">
+											<a href="#!" class="three-points dropdown-toggle" data-toggle="dropdown">&#8226;&#8226;&#8226;</a>
+				              <div class="dropdown-menu dropdown-menu-right">
+				                <a href="#!" class="dropdown-item">Edit</a>
+				                <a href="#!" class="dropdown-item">Delete</a>
+				              </div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<div class="modal fade" id="modal" tabindex="-1">
+		  <div class="modal-dialog modal-dialog-centered">
+		    <div class="modal-content">
+		      <div class="modal-header border-0">
+						<div class="title">New Voter Registration</div>
+		      </div>
+		      <div class="modal-body py-0">
+						<div class="row align-items-center">
+							<div class="col-4 col-sm-3 fz-13 font-weight-bold">
+								<div class="px-lg-3">Precinct</div>
+							</div>
+							<div class="col">
+	              <input type="text" class="form-control">
+							</div>
+						</div>
+						<div class="row align-items-center">
+							<div class="col-4 col-sm-3 fz-13 font-weight-bold">
+								<div class="px-lg-3">Address</div>
+							</div>
+							<div class="col">
+	              <input type="text" class="form-control">
+							</div>
+						</div>
+						<div class="row align-items-center">
+							<div class="col-4 col-sm-3 fz-13 font-weight-bold">
+								<div class="px-lg-3">Apartment</div>
+							</div>
+							<div class="col">
+	              <input type="text" class="form-control">
+							</div>
+						</div>
+						<div class="row align-items-center">
+							<div class="col-4 col-sm-3 fz-13 font-weight-bold">
+								<div class="px-lg-3">City</div>
+							</div>
+							<div class="col">
+	              <input type="text" class="form-control">
+							</div>
+						</div>
+						<div class="row align-items-center">
+							<div class="col-4 col-sm-3 fz-13 font-weight-bold">
+								<div class="px-lg-3">State</div>
+							</div>
+							<div class="col">
+	              <input type="text" class="form-control">
+							</div>
+						</div>
+						<div class="row align-items-center">
+							<div class="col-4 col-sm-3 fz-13 font-weight-bold">
+								<div class="px-lg-3">Zip</div>
+							</div>
+							<div class="col">
+	              <input type="text" class="form-control">
+							</div>
+						</div>
+						<div class="row align-items-center">
+							<div class="col-4 col-sm-3 fz-13 font-weight-bold">
+								<div class="px-lg-3">Year</div>
+							</div>
+							<div class="col">
+	              <input type="text" class="form-control">
+							</div>
+						</div>
+						<div class="row align-items-center mt-2">
+							<div class="col-4 col-sm-3">
+							</div>
+							<div class="col">
+				        <button class="btn btn-primary mr-2">Save</button>
+				        <button class="btn btn-outline-danger mr-auto" data-dismiss="modal">Cancel</button>
+							</div>
+						</div>
+		      </div>
+
+		    </div>
+		  </div>
+		</div>
+		
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.js"></script>
+		<script src="https://unpkg.com/drag-on-drop@3.3.2/dist/dragon-drop.js"></script>
+		<script src="https://cdn.tutorialjinni.com/selectize.js/0.12.6/js/standalone/selectize.min.js"></script>
+		<script src="https://cdn.tutorialjinni.com/selectize.js/0.12.6/js/selectize.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>
