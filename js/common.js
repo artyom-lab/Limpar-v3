@@ -19,6 +19,8 @@ $(document).ready(function() {
 	Waves.attach('.wave2', ['waves-dark']);
 	Waves.init();
 
+// VERIFICATION
+
 	$(`[data-index=1]`).focus();
 
 	$('.verify-input-field').keypress(function(e){
@@ -61,6 +63,8 @@ $(document).ready(function() {
 	  }
 	}
 
+// DRAG-N-DROP
+
 	var demo1 = new DragonDrop(document.getElementById('demo-1'), {
 	  handle: '.handle',
 	  announcement: {
@@ -95,11 +99,20 @@ $(document).ready(function() {
 	  .on('reorder', function (container, item) { console.log('reorder: ', item); })
 	  .on('cancel', function () { console.log('Reordering cancelled'); });
 
+// CHECKBOXES
+
 	$('#all').on('click', function() {
 		if ($('input[name="step"]:checked').length == $('input[name="step"]').length)
 			$('input[name="step"]').prop('checked', false);
 		else
 			$('input[name="step"]').prop('checked', true);
+	});
+
+	$('#status-all').on('click', function() {
+		if ($('input[name="status"]:checked').length == $('input[name="status"]').length)
+			$('input[name="status"]').prop('checked', false);
+		else
+			$('input[name="status"]').prop('checked', true);
 	});
 
 	$('.switch-wrap-box input').on('click', function() {

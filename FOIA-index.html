@@ -710,7 +710,7 @@
 							</div>
 						</div>
 						<div class="block">
-							<a href="#!" class="dashboard" data-toggle="collapse" data-target="#collapseFOIA">FOIA</a>
+							<a href="#!" class="dashboard" data-toggle="collapse" data-target="#collapseFOIA" aria-expanded="true">FOIA</a>
 							<div id="collapseFOIA" class="collapse show" data-parent="#accordionExample">
 								<div class="refine fz-13 pb-5">
 									<div class="mb-4">
@@ -728,12 +728,188 @@
 											</div>
 										</div>
 									</div>
-
-
-
-
-
-									
+									<div class="mb-4">
+										<div class="text-uppercase font-weight-bold mt-3 mb-1">Read/Unread</div>
+										<div class="row align-items-center mb-1">
+											<div class="col">
+												<label class="label-read">       
+												  <input type="checkbox" name="read">
+												  <span class="align-middle f"></span>
+												  <span class="align-middle ml-1">Read</span>
+												</label>
+											</div>
+											<div class="col-auto">(4,399)</div>
+										</div>
+										<div class="row align-items-center mb-1">
+											<div class="col">
+												<label class="label-read">       
+												  <input type="checkbox" name="read">
+												  <span class="align-middle f"></span>
+												  <span class="align-middle ml-1">Unread</span>
+												</label>
+											</div>
+											<div class="col-auto">(42)</div>
+										</div>
+									</div>
+									<div class="mb-4">
+										<div class="text-uppercase font-weight-bold mt-3 mb-1">Series</div>
+										<div class="form-refine-select">
+											<a href="#!" class="blue-cross">+</a>
+											<div class="select-box">
+												<select class="select2">
+													<option value="" hidden>Search for a FOIA series</option>
+					                <option value="0">Series 1</option>
+					                <option value="1">Series 2</option>
+					                <option value="2">Series 3</option>
+					                <option value="3">Series 4</option>
+					                <option value="4">Series 5</option>
+					                <option value="5">Series 6</option>
+					                <option value="6">Series 7</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="mb-4">
+										<div class="text-uppercase font-weight-bold mt-3 mb-1">Organization</div>
+										<div class="form-refine-select">
+											<a href="#!" class="blue-cross">+</a>
+											<div class="select-box">
+												<select class="select2">
+													<option value="" hidden>Search for an Organization</option>
+					                <option value="0">Organization 1</option>
+					                <option value="1">Organization 2</option>
+					                <option value="2">Organization 3</option>
+					                <option value="3">Organization 4</option>
+					                <option value="4">Organization 5</option>
+					                <option value="5">Organization 6</option>
+					                <option value="6">Organization 7</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="mb-4">
+										<div class="text-uppercase font-weight-bold mt-3 mb-1">Status</div>
+										<div class="row align-items-center mb-1">
+											<div class="col">
+												<label class="label-read">       
+												  <input type="checkbox" id="status-all">
+												  <span class="align-middle f"></span>
+												  <span class="align-middle ml-1">All</span>
+												</label>
+											</div>
+											<div class="col-auto">(4,441)</div>
+										</div>
+										<div class="row align-items-center mb-1">
+											<div class="col">
+												<label class="label-read">       
+												  <input type="checkbox" name="status" id="status-all">
+												  <span class="align-middle f"></span>
+												  <span class="align-middle ml-1">Bounced</span>
+												</label>
+											</div>
+											<div class="col-auto">(1)</div>
+										</div>
+										<div class="row align-items-center mb-1">
+											<div class="col">
+												<label class="label-read">       
+												  <input type="checkbox" name="status" id="status-all">
+												  <span class="align-middle f"></span>
+												  <span class="align-middle ml-1">Pending</span>
+												</label>
+											</div>
+											<div class="col-auto">(0)</div>
+										</div>
+										<div class="row align-items-center mb-1">
+											<div class="col">
+												<label class="label-read">       
+												  <input type="checkbox" name="status" id="status-all">
+												  <span class="align-middle f"></span>
+												  <span class="align-middle ml-1">Sent</span>
+												</label>
+											</div>
+											<div class="col-auto">(4,440)</div>
+										</div>
+										<div class="row align-items-center mb-1">
+											<div class="col">
+												<label class="label-read">       
+												  <input type="checkbox" name="status" id="status-all">
+												  <span class="align-middle f"></span>
+												  <span class="align-middle ml-1">Replied</span>
+												</label>
+											</div>
+											<div class="col-auto">(2,396)</div>
+										</div>
+										<div class="row align-items-center mb-1">
+											<div class="col">
+												<label class="label-read">       
+												  <input type="checkbox" name="status" id="status-all">
+												  <span class="align-middle f"></span>
+												  <span class="align-middle ml-1">Processing</span>
+												</label>
+											</div>
+											<div class="col-auto">(679)</div>
+										</div>
+										<div class="row align-items-center mb-1">
+											<div class="col">
+												<label class="label-read">       
+												  <input type="checkbox" name="status" id="status-all">
+												  <span class="align-middle f"></span>
+												  <span class="align-middle ml-1">Review</span>
+												</label>
+											</div>
+											<div class="col-auto">(15)</div>
+										</div>
+										<div class="row align-items-center mb-1">
+											<div class="col">
+												<label class="label-read">       
+												  <input type="checkbox" name="status" id="status-all">
+												  <span class="align-middle f"></span>
+												  <span class="align-middle ml-1">Wrong Data</span>
+												</label>
+											</div>
+											<div class="col-auto">(20)</div>
+										</div>
+										<div class="row align-items-center mb-1">
+											<div class="col">
+												<label class="label-read">       
+												  <input type="checkbox" name="status" id="status-all">
+												  <span class="align-middle f"></span>
+												  <span class="align-middle ml-1">Payment Required</span>
+												</label>
+											</div>
+											<div class="col-auto">(57)</div>
+										</div>
+										<div class="row align-items-center mb-1">
+											<div class="col">
+												<label class="label-read">       
+												  <input type="checkbox" name="status" id="status-all"> 
+												  <span class="align-middle f"></span>
+												  <span class="align-middle ml-1">Completed</span>
+												</label>
+											</div>
+											<div class="col-auto">(818)</div>
+										</div>
+										<div class="row align-items-center mb-1">
+											<div class="col">
+												<label class="label-read">       
+												  <input type="checkbox" name="status" id="status-all">
+												  <span class="align-middle f"></span>
+												  <span class="align-middle ml-1">Denied</span>
+												</label>
+											</div>
+											<div class="col-auto">(104)</div>
+										</div>
+										<div class="row align-items-center mb-1">
+											<div class="col">
+												<label class="label-read">       
+												  <input type="checkbox" name="status" id="status-all">
+												  <span class="align-middle f"></span>
+												  <span class="align-middle ml-1">No Response</span>
+												</label>
+											</div>
+											<div class="col-auto">(351)</div>
+										</div>
+									</div>	
 									<div>
 										<div class="text-uppercase font-weight-bold mt-3 mb-1">Geography</div>
 										<div class="section-teams-hide">
@@ -839,17 +1015,6 @@
 										</div>
 									</div>
 								</div>
-
-
-
-
-
-
-
-
-
-
-
 							</div>
 						</div>
 					</div>
@@ -862,646 +1027,234 @@
 			<div class="head">
 				<div class="row align-items-center">
 					<div class="col">
-						<div class="d-inline-block align-middle">
-							<span class="img-team1 img-team2 mr-0">
-								<img src="img/teams-16.png" alt="">
-							</span>
-							<span class="align-middle d-inline-block font-weight-bold fz-18a">Indiana Hoosiers</span>
-						</div>
-						<div class="d-inline-block font-weight-bold fz-18a align-middle mx-1">vs</div>
-						<div class="d-inline-block align-middle">
-							<span class="img-team1 img-team2 mr-0">
-								<img src="img/teams-17.png" alt="">
-							</span>
-							<span class="align-middle d-inline-block font-weight-bold fz-18a ml-1">Iowa Hawkeyes</span>
-						</div>
-						<div class="fz-12 gray d-none d-sm-inline-block">
-							<span class="align-middle ml-3">Mens Baseball</span>
-						</div>
+						<span class="font-weight-bold fz-18">FOIA</span>
 					</div>
 					<div class="col-auto">
-						<div class="social-icons">
-	              <div class="row row-2 justify-content-sm-end">
-	                <div class="col-auto">
-				            <form class="form-inline dropdown dropdown-1">
-				              <button class="btn dropdown-toggle border-shadow" data-toggle="dropdown">Tools</button>
-				              <div class="dropdown-menu dropdown-menu-right">
-				                <a href="#!" class="dropdown-item fz-14">Merge Records</a>
-				                <a href="#!" class="dropdown-item fz-14">Reassign Type/Cat</a>
-				                <a href="#!" class="dropdown-item fz-14">Assign Parent</a>
-				                <a href="#!" class="dropdown-item fz-14">Assign Projects</a>
-				              </div>
-				            </form>
-	                </div>
-	              </div>
-	            </div>
+						<a href="#!" class="btn btn-primary" data-toggle="modal" data-target="#modal">Create New FOIA</a>
 					</div>
 				</div>
 			</div>
 
 			<div class="content">
-				<div class="cart fz-13 flex-grow-1 border-shadow mb-4">
-					<div class="row justify-content-center">
-						<div class="col-sm-6 text-center fz-12 gray">Thu, Jan 21, 2021 @ Dwane Banks Field - 960 Stadium Dr, Iowa City, IA</div>
-					</div>
-					<div class="row row-1 justify-content-center align-items-center my-2">
-						<div class="col-md-1 col-xl-auto text-center text-md-right mb-2 mb-md-0">
-							<span class="align-middle d-inline-block font-weight-bold fz-24 d-1500">Indiana Hoosiers</span>
-							<span class="img-team1 img-team3 mr-0">
-								<img src="img/teams-16.png" alt="">
-							</span>
-						</div>
-						<div class="col-md-10 col-xl-6">
-							<div class="table-responsive">
-								<table class="table table-mini table-borderless">
-									<thead>
-										<tr>
-											<td></td>
-											<td>1</td>
-											<td>2</td>
-											<td>3</td>
-											<td>4</td>
-											<td>5</td>
-											<td>6</td>
-											<td>7</td>
-											<td>8</td>
-											<td>9</td>
-											<th>R</th>
-											<th>H</th>
-											<th>E</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>IU</td>
-											<td>0</td>
-											<td>1</td>
-											<td>0</td>
-											<td>3</td>
-											<td>0</td>
-											<td>0</td>
-											<td>1</td>
-											<td>0</td>
-											<td>0</td>
-											<th>5</th>
-											<th>9</th>
-											<th>0</th>
-										</tr>
-										<tr>
-											<td>IOWA</td>
-											<td>0</td>
-											<td>0</td>
-											<td>2</td>
-											<td>0</td>
-											<td>0</td>
-											<td>1</td>
-											<td>0</td>
-											<td>0</td>
-											<td>1</td>
-											<th>4</th>
-											<th>11</th>
-											<th>2</th>
-										</tr>
-									</tbody>
-								</table>
-							</div>					
-						</div>
-						<div class="col-md-1 col-xl-auto text-center text-md-left mt-2 mt-md-0">
-							<span class="img-team1 img-team3 mr-0">
-								<img src="img/teams-17.png" alt="">
-							</span>
-							<span class="align-middle d-inline-block font-weight-bold fz-24 d-1500">Iowa Hawkeyes</span>
-						</div>
-					</div>
-				</div>
-
 				<div class="cart cart-2 gray fz-13 flex-grow-1 border-shadow mb-4">
 					<div class="acc">
-						<span class="img-team1 img-team2">
-							<img src="img/teams-16.png" alt="">
-						</span>
-						<span class="align-middle font-weight-bold black">Indiana Hoosiers</span>
+						<span class="font-weight-bold black">FOIAs</span>
 					</div>
 					<div class="table-responsive">
-						<table class="table table-2 table-teams table-games  table-borderless">
+						<table class="table table-2 table-FOIA table-borderless">
 							<thead>
 								<tr>
-									<th>Name</th>
-									<th>AB</th>
-									<th>R</th>
-									<th>H</th>
-									<th>RBI</th>
-									<th>BB</th>
-									<th>SO</th>
-									<th>LOB</th>
-									<th></th>
+									<th>FOIA Series</th>
+									<th>Responses</th>
+									<th>To</th>
+									<th>Status</th>
+									<th>Date</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
-									<td>
-										<a href="#!" class="align-middle" data-toggle="modal" data-target="#modal">Trayce Jackson-Davis <span class="gray">LF</span></a>
-									</td>
-									<td>5</td>
-									<td>2</td>
-									<td>0</td>
-									<td>1</td>
-									<td>0</td>
-									<td>1</td>
-									<td>0</td>
-									<td class="text-right text-nowrap">
-										<div class="dropdown dropdown-2">
-											<a href="#!" class="three-points dropdown-toggle" data-toggle="dropdown">•••</a>
-				              <div class="dropdown-menu dropdown-menu-right">
-				                <a href="#!" class="dropdown-item">Edit</a>
-				                <a href="#!" class="dropdown-item">Delete</a>
-				              </div>
-										</div>
-									</td>
+									<td>Public Records Request - Tax Roll 2/12/23</td>
+									<td><span class="pill-response">-</span></td>
+									<td>Potter County Tax Assessor</td>
+									<td><span class="pill-status status-sent">Sent</span></td>
+									<td>5:01 PM</td>
 								</tr>
 								<tr>
-									<td>
-										<a href="#!" class="align-middle">Race Thompson <span class="gray">CF</span></a>
-									</td>
-									<td>5</td>
-									<td>2</td>
-									<td>3</td>
-									<td>1</td>
-									<td>0</td>
-									<td>0</td>
-									<td>0</td>
-									<td class="text-right text-nowrap">
-										<div class="dropdown dropdown-2">
-											<a href="#!" class="three-points dropdown-toggle" data-toggle="dropdown">•••</a>
-				              <div class="dropdown-menu dropdown-menu-right">
-				                <a href="#!" class="dropdown-item">Edit</a>
-				                <a href="#!" class="dropdown-item">Delete</a>
-				              </div>
-										</div>
-									</td>
+									<td>Public Records Request - Tax Roll 2/12/23</td>
+									<td><span class="pill-response">-</span></td>
+									<td>Webb County Tax Assessor</td>
+									<td><span class="pill-status status-sent">Sent</span></td>
+									<td>4:58 PM</td>
 								</tr>
 								<tr>
-									<td>
-										<a href="#!" class="align-middle">Armaan Franklin <span class="gray">3B</span></a>
-									</td>
-									<td>5</td>
-									<td>0</td>
-									<td>1</td>
-									<td>1</td>
-									<td>3</td>
-									<td>0</td>
-									<td>1</td>
-									<td class="text-right text-nowrap">
-										<div class="dropdown dropdown-2">
-											<a href="#!" class="three-points dropdown-toggle" data-toggle="dropdown">•••</a>
-				              <div class="dropdown-menu dropdown-menu-right">
-				                <a href="#!" class="dropdown-item">Edit</a>
-				                <a href="#!" class="dropdown-item">Delete</a>
-				              </div>
-										</div>
-									</td>
+									<td>Public Records Request - Tax Roll 2/12/23</td>
+									<td><span class="pill-response">-</span></td>
+									<td>Grayson County Tax Assessor</td>
+									<td><span class="pill-status status-sent">Sent</span></td>
+									<td>4:53 PM</td>
+								</tr>
+								<tr class="active">
+									<td>Public Records Request - Tax Roll 2/12/23</td>
+									<td><span class="pill-response">1</span></td>
+									<td>Brunswick County Tax Assessor</td>
+									<td><span class="pill-status status-processing">Processing</span></td>
+									<td>4:50 PM</td>
+								</tr>
+								<tr class="active">
+									<td>Public Records Request - Tax Roll 2/12/23</td>
+									<td><span class="pill-response">2</span></td>
+									<td>Gregg County Tax Assessor</td>
+									<td><span class="pill-status status-denied">Denied</span></td>
+									<td>4:49 PM</td>
 								</tr>
 								<tr>
-									<td>
-										<a href="#!" class="align-middle">Rob Phinisee <span class="gray">1B</span></a>
-									</td>
-									<td>3</td>
-									<td>0</td>
-									<td>1</td>
-									<td>0</td>
-									<td>2</td>
-									<td>2</td>
-									<td>1</td>
-									<td class="text-right text-nowrap">
-										<div class="dropdown dropdown-2">
-											<a href="#!" class="three-points dropdown-toggle" data-toggle="dropdown">•••</a>
-				              <div class="dropdown-menu dropdown-menu-right">
-				                <a href="#!" class="dropdown-item">Edit</a>
-				                <a href="#!" class="dropdown-item">Delete</a>
-				              </div>
-										</div>
-									</td>
+									<td>Public Records Request - Tax Roll 2/12/23</td>
+									<td><span class="pill-response">1</span></td>
+									<td>Lycoming County Tax Assessor</td>
+									<td><span class="pill-status status-payment">Payment</span></td>
+									<td>4:45 PM</td>
 								</tr>
 								<tr>
-									<td>
-										<a href="#!" class="align-middle">Al Durham <span class="gray">C</span></a>
-									</td>
-									<td>4</td>
-									<td>0</td>
-									<td>1</td>
-									<td>0</td>
-									<td>0</td>
-									<td>0</td>
-									<td>0</td>
-									<td class="text-right text-nowrap">
-										<div class="dropdown dropdown-2">
-											<a href="#!" class="three-points dropdown-toggle" data-toggle="dropdown">•••</a>
-				              <div class="dropdown-menu dropdown-menu-right">
-				                <a href="#!" class="dropdown-item">Edit</a>
-				                <a href="#!" class="dropdown-item">Delete</a>
-				              </div>
-										</div>
-									</td>
+									<td>Public Records Request - Tax Roll 2/12/23</td>
+									<td><span class="pill-response">2</span></td>
+									<td>Monroe County Tax Assessor</td>
+									<td><span class="pill-status status-completed">Completed</span></td>
+									<td>4:41 PM</td>
+								</tr>
+								<tr class="bounced">
+									<td>Public Records Request - Tax Roll 2/12/23</td>
+									<td><span class="pill-response">-</span></td>
+									<td>Bibb County Tax Assessor</td>
+									<td><span class="pill-status status-bounced">Bounced</span></td>
+									<td>4:39 PM</td>
 								</tr>
 								<tr>
-									<td>
-										<a href="#!" class="align-middle">Jordan Geronimo <span class="gray">RF</span></a>
-									</td>
-									<td>4</td>
-									<td>1</td>
-									<td>0</td>
-									<td>1</td>
-									<td>0</td>
-									<td>0</td>
-									<td>0</td>
-									<td class="text-right text-nowrap">
-										<div class="dropdown dropdown-2">
-											<a href="#!" class="three-points dropdown-toggle" data-toggle="dropdown">•••</a>
-				              <div class="dropdown-menu dropdown-menu-right">
-				                <a href="#!" class="dropdown-item">Edit</a>
-				                <a href="#!" class="dropdown-item">Delete</a>
-				              </div>
-										</div>
-									</td>
+									<td>Public Records Request - Tax Roll 2/12/23</td>
+									<td><span class="pill-response">-</span></td>
+									<td>McLennan County Tax Assessor</td>
+									<td><span class="pill-status status-sent">Sent</span></td>
+									<td>4:36 PM</td>
+								</tr>
+								<tr class="active">
+									<td>Public Records Request - Tax Roll 2/12/23</td>
+									<td><span class="pill-response">1</span></td>
+									<td>Marathon County Tax Assessor</td>
+									<td><span class="pill-status status-reviewing">Reviewing</span></td>
+									<td>Mar 20</td>
 								</tr>
 								<tr>
-									<td>
-										<a href="#!" class="align-middle">Jerome Hunter <span class="gray">2B</span></a>
-									</td>
-									<td>4</td>
-									<td>0</td>
-									<td>0</td>
-									<td>0</td>
-									<td>0</td>
-									<td>1</td>
-									<td>1</td>
-									<td class="text-right text-nowrap">
-										<div class="dropdown dropdown-2">
-											<a href="#!" class="three-points dropdown-toggle" data-toggle="dropdown">•••</a>
-				              <div class="dropdown-menu dropdown-menu-right">
-				                <a href="#!" class="dropdown-item">Edit</a>
-				                <a href="#!" class="dropdown-item">Delete</a>
-				              </div>
-										</div>
-									</td>
+									<td>Public Records Request - Tax Roll 2/12/23</td>
+									<td><span class="pill-response">-</span></td>
+									<td>Athens County Tax Assessor</td>
+									<td><span class="pill-status status-noresponse">No Response</span></td>
+									<td>Mar 20</td>
 								</tr>
 								<tr>
-									<td>
-										<a href="#!" class="align-middle">Khristian Lander <span class="gray">SS</span></a>
-									</td>
-									<td>4</td>
-									<td>0</td>
-									<td>0</td>
-									<td>0</td>
-									<td>1</td>
-									<td>0</td>
-									<td>1</td>
-									<td class="text-right text-nowrap">
-										<div class="dropdown dropdown-2">
-											<a href="#!" class="three-points dropdown-toggle" data-toggle="dropdown">•••</a>
-				              <div class="dropdown-menu dropdown-menu-right">
-				                <a href="#!" class="dropdown-item">Edit</a>
-				                <a href="#!" class="dropdown-item">Delete</a>
-				              </div>
-										</div>
-									</td>
+									<td>Public Records Request - Tax Roll 2/12/23</td>
+									<td><span class="pill-response">-</span></td>
+									<td>Galveston County Tax Assessor</td>
+									<td><span class="pill-status status-pending">Pending</span></td>
+									<td>Mar 20</td>
+								</tr>
+								<tr class="active">
+									<td>Public Records Request - Tax Roll 2/12/23</td>
+									<td><span class="pill-response">1</span></td>
+									<td>Forsyth County Tax Assessor</td>
+									<td><span class="pill-status status-wrong">Wrong Data</span></td>
+									<td>Mar 20</td>
 								</tr>
 								<tr>
-									<td>
-										<a href="#!" class="align-middle">Anthony Leal <span class="gray">P</span></a>
-									</td>
-									<td>4</td>
-									<td>0</td>
-									<td>3</td>
-									<td>1</td>
-									<td>0</td>
-									<td>0</td>
-									<td>0</td>
-									<td class="text-right text-nowrap">
-										<div class="dropdown dropdown-2">
-											<a href="#!" class="three-points dropdown-toggle" data-toggle="dropdown">•••</a>
-				              <div class="dropdown-menu dropdown-menu-right">
-				                <a href="#!" class="dropdown-item">Edit</a>
-				                <a href="#!" class="dropdown-item">Delete</a>
-				              </div>
-										</div>
-									</td>
+									<td>Public Records Request - Tax Roll 2/12/23</td>
+									<td><span class="pill-response">2</span></td>
+									<td>Henry County Tax Assessor</td>
+									<td><span class="pill-status status-sent">Sent</span></td>
+									<td>Mar 20</td>
 								</tr>
 								<tr>
-									<th>Team</th>
-									<th>38</th>
-									<th>5</th>
-									<th>9</th>
-									<th>5</th>
-									<th>6</th>
-									<th>4</th>
-									<th>4</th>
-									<th></th>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-
-				<div class="cart cart-2 gray fz-13 flex-grow-1 border-shadow mb-4">
-					<div class="acc">
-						<span class="img-team1 img-team2">
-							<img src="img/teams-17.png" alt="">
-						</span>
-						<span class="align-middle font-weight-bold black">Iowa Hawkeyes</span>
-					</div>
-					<div class="table-responsive">
-						<table class="table table-2 table-teams table-games table-borderless">
-							<thead>
-								<tr>
-									<th>Name</th>
-									<th>AB</th>
-									<th>R</th>
-									<th>H</th>
-									<th>RBI</th>
-									<th>BB</th>
-									<th>SO</th>
-									<th>LOB</th>
-									<th></th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<a href="#!" class="align-middle">Luka Garza  <span class="gray">2B</span></a>
-									</td>
-									<td>5</td>
-									<td>0</td>
-									<td>1</td>
-									<td>1</td>
-									<td>0</td>
-									<td>0</td>
-									<td>3</td>
-									<td class="text-right text-nowrap">
-										<div class="dropdown dropdown-2">
-											<a href="#!" class="three-points dropdown-toggle" data-toggle="dropdown">•••</a>
-				              <div class="dropdown-menu dropdown-menu-right">
-				                <a href="#!" class="dropdown-item">Edit</a>
-				                <a href="#!" class="dropdown-item">Delete</a>
-				              </div>
-										</div>
-									</td>
+									<td>Public Records Request - Tax Roll 2/12/23</td>
+									<td><span class="pill-response">1</span></td>
+									<td>Johnson County Tax Assessor</td>
+									<td><span class="pill-status status-sent">Sent</span></td>
+									<td>Mar 20</td>
 								</tr>
 								<tr>
-									<td>
-										<a href="#!" class="align-middle">Joe Wisecamp <span class="gray">LF</span></a>
-									</td>
-									<td>5</td>
-									<td>0</td>
-									<td>0</td>
-									<td>0</td>
-									<td>0</td>
-									<td>0</td>
-									<td>1</td>
-									<td class="text-right text-nowrap">
-										<div class="dropdown dropdown-2">
-											<a href="#!" class="three-points dropdown-toggle" data-toggle="dropdown">•••</a>
-				              <div class="dropdown-menu dropdown-menu-right">
-				                <a href="#!" class="dropdown-item">Edit</a>
-				                <a href="#!" class="dropdown-item">Delete</a>
-				              </div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<a href="#!" class="align-middle">CJ Frederick <span class="gray">1B</span></a>
-									</td>
-									<td>5</td>
-									<td>0</td>
-									<td>2</td>
-									<td>0</td>
-									<td>0</td>
-									<td>0</td>
-									<td>0</td>
-									<td class="text-right text-nowrap">
-										<div class="dropdown dropdown-2">
-											<a href="#!" class="three-points dropdown-toggle" data-toggle="dropdown">•••</a>
-				              <div class="dropdown-menu dropdown-menu-right">
-				                <a href="#!" class="dropdown-item">Edit</a>
-				                <a href="#!" class="dropdown-item">Delete</a>
-				              </div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<a href="#!" class="align-middle">CJ Frederick <span class="gray">3B</span></a>
-									</td>
-									<td>3</td>
-									<td>0</td>
-									<td>1</td>
-									<td>0</td>
-									<td>1</td>
-									<td>1</td>
-									<td>0</td>
-									<td class="text-right text-nowrap">
-										<div class="dropdown dropdown-2">
-											<a href="#!" class="three-points dropdown-toggle" data-toggle="dropdown">•••</a>
-				              <div class="dropdown-menu dropdown-menu-right">
-				                <a href="#!" class="dropdown-item">Edit</a>
-				                <a href="#!" class="dropdown-item">Delete</a>
-				              </div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<a href="#!" class="align-middle">Keegan Murray <span class="gray">RF</span></a>
-									</td>
-									<td>4</td>
-									<td>0</td>
-									<td>1</td>
-									<td>0</td>
-									<td>0</td>
-									<td>0</td>
-									<td>3</td>
-									<td class="text-right text-nowrap">
-										<div class="dropdown dropdown-2">
-											<a href="#!" class="three-points dropdown-toggle" data-toggle="dropdown">•••</a>
-				              <div class="dropdown-menu dropdown-menu-right">
-				                <a href="#!" class="dropdown-item">Edit</a>
-				                <a href="#!" class="dropdown-item">Delete</a>
-				              </div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<a href="#!" class="align-middle">Kris Murray <span class="gray">LF</span></a>
-									</td>
-									<td>4</td>
-									<td>1</td>
-									<td>2</td>
-									<td>0</td>
-									<td>0</td>
-									<td>1</td>
-									<td>2</td>
-									<td class="text-right text-nowrap">
-										<div class="dropdown dropdown-2">
-											<a href="#!" class="three-points dropdown-toggle" data-toggle="dropdown">•••</a>
-				              <div class="dropdown-menu dropdown-menu-right">
-				                <a href="#!" class="dropdown-item">Edit</a>
-				                <a href="#!" class="dropdown-item">Delete</a>
-				              </div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<a href="#!" class="align-middle">Patrick McCaffery <span class="gray">CF</span></a>
-									</td>
-									<td>4</td>
-									<td>1</td>
-									<td>3</td>
-									<td>1</td>
-									<td>0</td>
-									<td>1</td>
-									<td>0</td>
-									<td class="text-right text-nowrap">
-										<div class="dropdown dropdown-2">
-											<a href="#!" class="three-points dropdown-toggle" data-toggle="dropdown">•••</a>
-				              <div class="dropdown-menu dropdown-menu-right">
-				                <a href="#!" class="dropdown-item">Edit</a>
-				                <a href="#!" class="dropdown-item">Delete</a>
-				              </div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<a href="#!" class="align-middle">Jack Nunge <span class="gray">SS</span></a>
-									</td>
-									<td>4</td>
-									<td>0</td>
-									<td>0</td>
-									<td>0</td>
-									<td>0</td>
-									<td>2</td>
-									<td>0</td>
-									<td class="text-right text-nowrap">
-										<div class="dropdown dropdown-2">
-											<a href="#!" class="three-points dropdown-toggle" data-toggle="dropdown">•••</a>
-				              <div class="dropdown-menu dropdown-menu-right">
-				                <a href="#!" class="dropdown-item">Edit</a>
-				                <a href="#!" class="dropdown-item">Delete</a>
-				              </div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<a href="#!" class="align-middle">Tony Perkins <span class="gray">P</span></a>
-									</td>
-									<td>4</td>
-									<td>0</td>
-									<td>1</td>
-									<td>0</td>
-									<td>0</td>
-									<td>0</td>
-									<td>1</td>
-									<td class="text-right text-nowrap">
-										<div class="dropdown dropdown-2">
-											<a href="#!" class="three-points dropdown-toggle" data-toggle="dropdown">•••</a>
-				              <div class="dropdown-menu dropdown-menu-right">
-				                <a href="#!" class="dropdown-item">Edit</a>
-				                <a href="#!" class="dropdown-item">Delete</a>
-				              </div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th>Team</th>
-									<th>38</th>
-									<th>2</th>
-									<th>11</th>
-									<th>2</th>
-									<th>1</th>
-									<th>5</th>
-									<th>10</th>
-									<th></th>
+									<td>Public Records Request - Tax Roll 2/12/23</td>
+									<td><span class="pill-response">2</span></td>
+									<td>Alamance County Tax Assessor</td>
+									<td><span class="pill-status status-sent">Sent</span></td>
+									<td>Mar 20</td>
 								</tr>
 							</tbody>
 						</table>
 					</div>
 				</div>
 			</div>
-
 		</section>
 		
 		<div class="modal fade" id="modal" tabindex="-1">
-		  <div class="modal-dialog modal-370 modal-dialog-centered">
+		  <div class="modal-dialog modal-dialog-centered modal-lg">
 		    <div class="modal-content">
-		      <div class="modal-header border-0">
-						<div class="title">Edit Trayce Jackson-Davis Game Stats</div>
+		      <div class="modal-header border-0 pb-3">
+						<div class="title">New FOIA</div>
 		      </div>
 		      <div class="modal-body py-0">
-						<div class="row align-items-center">
-							<div class="col-6 fz-13 font-weight-bold">
-								<div>At Bats (AB)</div>
+		      	<p>Select a FOIA Type, define a FOIA Series name and assign orgs to your FOIA. You can select orgs one-by-one or select from a predefined list of orgs.</p>
+						<div class="row align-items-center mb-2">
+							<div class="col-4 col-sm-3 fz-13 font-weight-bold">
+								<div>Select Type</div>
 							</div>
-							<div class="col-4 col-sm-3">
-	              <input type="text" class="form-control mb-2">
-							</div>
-						</div>
-						<div class="row align-items-center">
-							<div class="col-6 fz-13 font-weight-bold">
-								<div>Runs (R)</div>
-							</div>
-							<div class="col-4 col-sm-3">
-	              <input type="text" class="form-control mb-2">
-							</div>
-						</div>
-						<div class="row align-items-center">
-							<div class="col-6 fz-13 font-weight-bold">
-								<div>Hits (H)</div>
-							</div>
-							<div class="col-4 col-sm-3">
-	              <input type="text" class="form-control mb-2">
-							</div>
-						</div>
-						<div class="row align-items-center">
-							<div class="col-6 fz-13 font-weight-bold">
-								<div>Runs Batted In (RBI)</div>
-							</div>
-							<div class="col-4 col-sm-3">
-	              <input type="text" class="form-control mb-2">
-							</div>
-						</div>
-						<div class="row align-items-center">
-							<div class="col-6 fz-13 font-weight-bold">
-								<div>Base on Balls (BB)</div>
-							</div>
-							<div class="col-4 col-sm-3">
-	              <input type="text" class="form-control mb-2">
-							</div>
-						</div>
-						<div class="row align-items-center">
-							<div class="col-6 fz-13 font-weight-bold">
-								<div>Strikeouts (SO)</div>
-							</div>
-							<div class="col-4 col-sm-3">
-	              <input type="text" class="form-control mb-2">
-							</div>
-						</div>
-						<div class="row align-items-center">
-							<div class="col-6 fz-13 font-weight-bold">
-								<div>Left on Base (LOB)</div>
-							</div>
-							<div class="col-4 col-sm-3">
-	              <input type="text" class="form-control mb-2">
-							</div>
-						</div>
-						<div class="row align-items-center mt-3">
 							<div class="col">
-				        <button class="btn btn-primary mr-2">Save</button>
-				        <button class="btn btn-outline-danger mr-auto" data-dismiss="modal">Cancel</button>
+	              <input type="text" class="form-control" placeholder="Select a Type">
 							</div>
+						</div>
+						<div class="row align-items-center mb-2">
+							<div class="col-4 col-sm-3 fz-13 font-weight-bold">
+								<div>FOIA Series</div>
+							</div>
+							<div class="col">
+	              <input type="text" class="form-control" placeholder="Enter a Series Name">
+							</div>
+						</div>
+						<div class="row align-items-center mb-2">
+							<div class="col-4 col-sm-3 fz-13 font-weight-bold">
+								<div>Orgs</div>
+							</div>
+							<div class="col">
+	              <input type="text" class="form-control" placeholder="Search for an Org">
+							</div>
+						</div>
+						<div class="row align-items-center mb-2">
+							<div class="col-4 col-sm-3 fz-13 font-weight-bold">
+								<div>Mail List</div>
+							</div>
+							<div class="col">
+	              <input type="text" class="form-control" placeholder="Search for an Org List">
+							</div>
+						</div>
+						<p class="pt-4">Build your FOIA email. Greetings, signatures, intros and legalese will be automatically inserted.</p>
+						<div class="row align-items-center mb-2">
+							<div class="col-4 col-sm-3 fz-13 font-weight-bold">
+								<div>Email Subject</div>
+							</div>
+							<div class="col">
+	              <input type="text" class="form-control" placeholder="Enter Email Subject">
+							</div>
+						</div>
+						<div class="row align-items-center mb-2">
+							<div class="col-4 col-sm-3 fz-13 font-weight-bold">
+								<div>Email Intro</div>
+							</div>
+							<div class="col">
+	              <input type="text" class="form-control" placeholder="Select Intro Type">
+							</div>
+						</div>	
+						<div class="row align-items-center pt-2 mb-2">
+							<div class="col-4 col-sm-3 fz-13 font-weight-bold">
+								<div>State Pub Override</div>
+							</div>
+							<div class="col check-login">
+	              <label class="form-check-label">	
+		              <input type="checkbox" name="overide">
+		              <span class="fas fa-check fz-14"></span>
+		            </label>
+							</div>
+						</div>
+						<div class="row pt-3 mb-2">
+							<div class="col-4 col-sm-3 fz-13 font-weight-bold">
+								<div>Email Body</div>
+							</div>
+							<div class="col">
+	              <p>Only enter the data being requested. Do not enter a greeting, signature, intro, legalese or fee waver copy.</p>
+							</div>
+						</div>						
+
+
+
+
+						<div class="pt-4">
+			        <button class="btn btn-primary mr-2">Save</button>
+			        <button class="btn btn-outline-primary mr-2">Preview</button>
+			        <button class="btn btn-outline-danger mr-auto" data-dismiss="modal">Cancel</button>
 						</div>
 		      </div>
 		    </div>

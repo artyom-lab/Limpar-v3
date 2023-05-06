@@ -217,15 +217,20 @@ a {
 .accordion-wrap .dashboard {
   font-size: 14px;
   font-weight: 900;
+  display: block;
   color: #3c4257;
-  text-transform: uppercase; }
-  .accordion-wrap .dashboard:hover {
-    opacity: 0.6; }
+  text-transform: uppercase;
+  margin: -14px -15px;
+  padding: 14px 15px;
+  background-color: #f9f9f9; }
+  .accordion-wrap .dashboard:hover, .accordion-wrap .dashboard[aria-expanded="true"] {
+    background: #FFF; }
 
 .block {
   padding: 14px 15px;
   color: #3c4257;
-  border-bottom: 1px solid #dcdcdc; }
+  border-bottom: 1px solid #dcdcdc;
+  background: #FFF; }
 
 .return {
   color: #7d7d8e;
@@ -319,7 +324,7 @@ h4, .h4 {
 .fz-14 {
   font-size: 14px; }
 
-.fz-18a {
+.fz-18, .fz-18a {
   font-size: 18px; }
 
 .social-icons a:hover {
@@ -444,7 +449,7 @@ h4, .h4 {
       margin-bottom: 4px;
       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
 
-.btn-primary, .btn-outline-danger, .btn-danger {
+.btn-primary, .btn-outline-danger, .btn-danger, .btn-outline-primary {
   border-radius: 100px;
   font-size: 14px;
   padding: 2.5px 12px; }
@@ -1028,8 +1033,7 @@ h4, .h4 {
       left: 5%;
       height: 13px;
       border-left: 1px dotted #3c4257;
-      transform: translateX(-50%);
-      z-index: -1; }
+      transform: translateX(-50%); }
   .section-teams-hide > .box-search:not(:first-child) {
     display: none; }
   .section-teams-hide > .box-search .cross-bigger {
@@ -1479,5 +1483,94 @@ h4, .h4 {
   left: 20px !important; }
   .daterangepicker:before, .daterangepicker:after {
     display: none; }
+
+.label-read {
+  margin-bottom: 0; }
+  .label-read input[type="checkbox"], .label-read input[type="radio"] {
+    display: none; }
+    .label-read input[type="checkbox"] ~ .f, .label-read input[type="radio"] ~ .f {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+      border: 1px solid #a7afb6;
+      border-radius: 100px;
+      position: relative; }
+    .label-read input[type="checkbox"]:checked ~ .f, .label-read input[type="radio"]:checked ~ .f {
+      transition: 0.3s;
+      background: #0086e5;
+      border-color: #0086e5; }
+      .label-read input[type="checkbox"]:checked ~ .f:before, .label-read input[type="radio"]:checked ~ .f:before {
+        content: "";
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        background: #0086e5;
+        border: 2px solid #FFF;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 100px; }
+
+.table-FOIA tbody tr {
+  font-weight: bold; }
+  .table-FOIA tbody tr:hover, .table-FOIA tbody tr.active {
+    background: #f0f4fb; }
+  .table-FOIA tbody tr.active {
+    font-weight: normal; }
+  .table-FOIA tbody tr.bounced {
+    font-weight: normal;
+    background: #ffe2e2; }
+
+.pill-response {
+  display: inline-block;
+  color: #FFF;
+  background: #0081ff;
+  padding: 2px;
+  border-radius: 5px;
+  min-width: 22px;
+  text-align: center; }
+
+.pill-status {
+  display: block;
+  color: #FFF;
+  padding: 2px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold; }
+  .pill-status.status-sent {
+    background: #00a1fe; }
+  .pill-status.status-processing {
+    background: #2e85b7; }
+  .pill-status.status-denied {
+    background: #222222; }
+  .pill-status.status-payment {
+    background: #05a89d; }
+  .pill-status.status-completed {
+    background: #8dda7d; }
+  .pill-status.status-bounced {
+    background: #fe968d; }
+  .pill-status.status-reviewing {
+    background: #ad00ff; }
+  .pill-status.status-noresponse {
+    background: #646464; }
+  .pill-status.status-pending {
+    background: #ffc000; }
+  .pill-status.status-wrong {
+    background: #ff402f; }
+
+.modal-content .modal-body .form-control {
+  border-radius: 8px;
+  height: 40px;
+  padding: 2px 18px;
+  margin-bottom: 0;
+  font-size: 13px;
+  border-color: #c8ced4; }
+  .modal-content .modal-body .form-control::-webkit-input-placeholder {
+    color: #c8ced4; }
+  .modal-content .modal-body .form-control::-moz-placeholder {
+    color: #c8ced4; }
+  .modal-content .modal-body .form-control:-ms-input-placeholder {
+    color: #c8ced4; }
 
 /*# sourceMappingURL=style.css.map */
