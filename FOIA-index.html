@@ -5,7 +5,7 @@
 		<title>Limpar</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
 		<link href="https://cdn.tutorialjinni.com/selectize.js/0.12.6/css/selectize.min.css" rel="stylesheet">
@@ -1180,7 +1180,7 @@
 		      <div class="modal-body py-0">
 		      	<p>Select a FOIA Type, define a FOIA Series name and assign orgs to your FOIA. You can select orgs one-by-one or select from a predefined list of orgs.</p>
 						<div class="row align-items-center mb-2">
-							<div class="col-4 col-sm-3 fz-13 font-weight-bold">
+							<div class="col-sm-3 fz-13 font-weight-bold mb-1 mb-sm-0">
 								<div>Select Type</div>
 							</div>
 							<div class="col">
@@ -1188,7 +1188,7 @@
 							</div>
 						</div>
 						<div class="row align-items-center mb-2">
-							<div class="col-4 col-sm-3 fz-13 font-weight-bold">
+							<div class="col-sm-3 fz-13 font-weight-bold mb-1 mb-sm-0">
 								<div>FOIA Series</div>
 							</div>
 							<div class="col">
@@ -1196,7 +1196,7 @@
 							</div>
 						</div>
 						<div class="row align-items-center mb-2">
-							<div class="col-4 col-sm-3 fz-13 font-weight-bold">
+							<div class="col-sm-3 fz-13 font-weight-bold mb-1 mb-sm-0">
 								<div>Orgs</div>
 							</div>
 							<div class="col">
@@ -1204,7 +1204,7 @@
 							</div>
 						</div>
 						<div class="row align-items-center mb-2">
-							<div class="col-4 col-sm-3 fz-13 font-weight-bold">
+							<div class="col-sm-3 fz-13 font-weight-bold mb-1 mb-sm-0">
 								<div>Mail List</div>
 							</div>
 							<div class="col">
@@ -1213,7 +1213,7 @@
 						</div>
 						<p class="pt-4">Build your FOIA email. Greetings, signatures, intros and legalese will be automatically inserted.</p>
 						<div class="row align-items-center mb-2">
-							<div class="col-4 col-sm-3 fz-13 font-weight-bold">
+							<div class="col-sm-3 fz-13 font-weight-bold mb-1 mb-sm-0">
 								<div>Email Subject</div>
 							</div>
 							<div class="col">
@@ -1221,7 +1221,7 @@
 							</div>
 						</div>
 						<div class="row align-items-center mb-2">
-							<div class="col-4 col-sm-3 fz-13 font-weight-bold">
+							<div class="col-sm-3 fz-13 font-weight-bold mb-1 mb-sm-0">
 								<div>Email Intro</div>
 							</div>
 							<div class="col">
@@ -1240,17 +1240,82 @@
 							</div>
 						</div>
 						<div class="row pt-3 mb-2">
-							<div class="col-4 col-sm-3 fz-13 font-weight-bold">
+							<div class="col-lg-3 fz-13 font-weight-bold mb-2 mb-lg-0">
 								<div>Email Body</div>
 							</div>
-							<div class="col">
+							<div class="col-lg">
 	              <p>Only enter the data being requested. Do not enter a greeting, signature, intro, legalese or fee waver copy.</p>
+								<div class="message-box">
+									<div class="message-header">
+										<div class="row row-1">
+											<div class="col-auto fz-0">
+												<div class="message-pill">
+													<a href="#!" class="pill">
+														<i class="fa-solid fa-b"></i>
+													</a>
+													<a href="#!" class="pill">
+														<i class="fa-solid fa-italic"></i>
+													</a>
+													<a href="#!" class="pill">
+														<i class="fa-solid fa-underline"></i>
+													</a>
+													<a href="#!" class="pill">
+														<i class="fa-solid fa-a"></i>
+													</a>
+												</div>
+											</div>
+											<div class="col-auto fz-0">
+												<div class="message-pill">
+													<a href="#!" class="pill">
+														<i class="fa-sharp fa-solid fa-align-left"></i>
+													</a>
+													<a href="#!" class="pill">
+														<i class="fa-sharp fa-solid fa-align-center"></i>
+													</a>
+													<a href="#!" class="pill">
+														<i class="fa-solid fa-list-ol"></i>
+													</a>
+													<a href="#!" class="pill">
+														<i class="fa-solid fa-paragraph"></i>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+		            	<textarea class="form-control textarea-message" placeholder="Enter Email Subject" rows="5"></textarea>
+								</div>
 							</div>
-						</div>						
-
-
-
-
+						</div>
+						<div class="row align-items-center pt-3 mb-2">
+							<div class="col-4 col-sm-3 fz-13 font-weight-bold">
+								<div>Fee Waver</div>
+							</div>
+							<div class="col check-login">
+	              <label class="form-check-label">	
+		              <input type="checkbox" name="waver">
+		              <span class="fas fa-check fz-14"></span>
+		            </label>
+							</div>
+						</div>
+						<p class="pt-4">Build the FOIAs schedule. Schedules can be editted at any time.</p>
+						<div class="row pt-2 mb-4">
+							<div class="col-lg-3 fz-13 font-weight-bold mb-2 mb-lg-0">
+								<div>Schedule Builder</div>
+							</div>
+							<div class="col-lg">
+								<div class="message-box">
+		            	<textarea class="form-control textarea-message textarea-schedule" placeholder="Schedule Builder Feature From Events" rows="5"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="row align-items-center mb-2">
+							<div class="col-sm-3 fz-13 font-weight-bold mb-1 mb-sm-0">
+								<div>No Response Schedule</div>
+							</div>
+							<div class="col">
+	              <input type="text" class="form-control" placeholder="If no response, select when email should resend">
+							</div>
+						</div>
 						<div class="pt-4">
 			        <button class="btn btn-primary mr-2">Save</button>
 			        <button class="btn btn-outline-primary mr-2">Preview</button>

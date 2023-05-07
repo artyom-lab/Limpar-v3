@@ -1626,3 +1626,42 @@ h4, .h4
 				color: #c8ced4
 			&:-ms-input-placeholder
 				color: #c8ced4
+
+.message-box
+	box-shadow: $box2
+	border-radius: 8px
+	.message-header
+		border-radius: 8px 8px 0 0
+		border-bottom: 1px solid $color-selectize 	
+		padding: 8px 12px 0
+		.message-pill
+			min-height: 30px
+			background: #fefefe
+			display: inline-block
+			font-size: 0
+			overflow: hidden
+			margin-bottom: 8px
+			.pill
+				min-width: 30px
+				height: 30px
+				font-size: 13px
+				color: $color-black
+				vertical-align: middle
+				text-align: center
+				display: inline-block
+				line-height: 30px
+				transition: $transition
+				&:hover
+					background: $color-selectize 
+
+.textarea-message
+	padding: 10px 15px !important
+	border: 0
+	min-height: 245px
+	resize: none 
+
+.textarea-schedule
+	min-height: 220px
+
+
+

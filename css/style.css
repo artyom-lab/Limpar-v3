@@ -1573,4 +1573,40 @@ h4, .h4 {
   .modal-content .modal-body .form-control:-ms-input-placeholder {
     color: #c8ced4; }
 
+.message-box {
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.35);
+  border-radius: 8px; }
+  .message-box .message-header {
+    border-radius: 8px 8px 0 0;
+    border-bottom: 1px solid #d7d8d9;
+    padding: 8px 12px 0; }
+    .message-box .message-header .message-pill {
+      min-height: 30px;
+      background: #fefefe;
+      display: inline-block;
+      font-size: 0;
+      overflow: hidden;
+      margin-bottom: 8px; }
+      .message-box .message-header .message-pill .pill {
+        min-width: 30px;
+        height: 30px;
+        font-size: 13px;
+        color: #000;
+        vertical-align: middle;
+        text-align: center;
+        display: inline-block;
+        line-height: 30px;
+        transition: 0.3s; }
+        .message-box .message-header .message-pill .pill:hover {
+          background: #d7d8d9; }
+
+.textarea-message {
+  padding: 10px 15px !important;
+  border: 0;
+  min-height: 245px;
+  resize: none; }
+
+.textarea-schedule {
+  min-height: 220px; }
+
 /*# sourceMappingURL=style.css.map */
