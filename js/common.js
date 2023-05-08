@@ -15,7 +15,7 @@ $(document).ready(function() {
     e.stopPropagation();
   });
 
-	Waves.attach('.wave', ['waves-light']);
+	Waves.attach('.wave, .btn, .plus', ['waves-light']);
 	Waves.attach('.wave2', ['waves-dark']);
 	Waves.init();
 

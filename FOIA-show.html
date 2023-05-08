@@ -1,0 +1,1154 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Limpar</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+		<link href="https://cdn.tutorialjinni.com/selectize.js/0.12.6/css/selectize.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<header class="navbar navbar-light bg-white fixed-top">
+			<div class="sidebar-top">
+				<div class="row align-items-center">
+					<div class="col">
+						<a class="logo" href="#!">Limpar</a>
+					</div>
+					<div class="col-auto">
+						<button class="sandwich" id="sandwich-1">
+					    <span></span>
+					  </button>
+					</div>
+				</div>
+			</div>
+			<div class="art">
+				<form class="form-inline form-search ml-auto">
+	        <input class="form-control input-search" type="text">
+	        <span class="fas fa-search search"></span>
+	      </form>
+				<a href="#!" class="avatar ml-3" style="background-image: url(img/avatar.png)"></a>
+			</div>
+		</header>
+
+		<aside class="sidebar-1">
+			<div class="sidebar-bottom">
+				<nav class="accordion-wrap">
+					<form class="form-inline form-search-2">
+						<input type="text" class="form-control form-control-4" placeholder="Search">
+						<button class="fas fa-search"></button>
+					</form>
+					<div class="accordion" id="accordionExample">
+						<div class="block">
+							<a href="#!" class="dashboard" data-toggle="collapse" data-target="#collapseOne">People</a>
+							<div id="collapseOne" class="collapse" data-parent="#accordionExample">
+								<div class="refine fz-13 pb-5">
+									<div class="mt-3">
+										<a class="return align-middle" href="#!"><i class="fas fa-chevron-left align-middle"></i>Back to Search</a>
+									</div>
+									<div class="text-uppercase font-weight-bold my-3">Refine Geo</div>
+									<div class="section-teams-hide">
+										<div class="box-search">
+											<div class="addresses addresses-refine-teams">State</div>
+											<div class="form-refine-select">
+												<a href="#!" class="cross cross-bigger"></a>
+												<a href="#!" class="blue-cross">+</a>
+												<div class="select-box">
+													<select class="select2">
+														<option value="" hidden>Search or Select a State</option>
+						                <option value="0">Alaska (8,726,178)</option>
+						                <option value="1">Alabama (8,726,178)</option>
+						                <option value="2">Arkansas (8,726,178)</option>
+						                <option value="3">Arizona (8,726,178)</option>
+						                <option value="4">California (8,726,178)</option>
+						                <option value="5">Colorado (8,726,178)</option>
+						                <option value="6">Connecticut (8,726,178)</option>
+						                <option value="7">Delaware (8,726,178)</option>
+						                <option value="8">Florida (8,726,178)</option>
+						                <option value="9">Georgia (8,726,178)</option>
+						                <option value="10">Hawaii (8,726,178)</option>
+						                <option value="11">Iowa (8,726,178)</option>
+						                <option value="12">Idaho (8,726,178)</option>
+						                <option value="13">Illinois (8,726,178)</option>
+						                <option value="14">Indiana (8,726,178)</option>
+						                <option value="15">Kansas (8,726,178)</option>
+						                <option value="16">Kentucky (8,726,178)</option>
+						                <option value="17">Louisiana (8,726,178)</option>
+						                <option value="18">Massachusetts (8,726,178)</option>
+						                <option value="19">Maryland (8,726,178)</option>
+						                <option value="20">Maine (8,726,178)</option>
+						                <option value="21">Michigan (8,726,178)</option>
+						                <option value="22">Minnesota (8,726,178)</option>
+						                <option value="23">Missouri (8,726,178)</option>
+						                <option value="24">Mississippi (8,726,178)</option>
+						                <option value="25">Montana (8,726,178)</option>
+						                <option value="26">North Carolina (8,726,178)</option>
+						                <option value="27">North Dakota (8,726,178)</option>
+						                <option value="28">Nebraska (8,726,178)</option>
+						                <option value="29">New Hampshire (8,726,178)</option>
+						                <option value="30">New Jersey (8,726,178)</option>
+						                <option value="31">New Mexico (8,726,178)</option>
+						                <option value="32">Nevada (8,726,178)</option>
+						                <option value="33">New York (8,726,178)</option>
+						                <option value="34">Ohio (8,726,178)</option>
+						                <option value="35">Oklahoma (8,726,178)</option>
+						                <option value="36">Oregon (8,726,178)</option>
+						                <option value="37">Pennsylvania (8,726,178)</option>
+						                <option value="38">Rhode Island (8,726,178)</option>
+						                <option value="39">South Carolina (8,726,178)</option>
+						                <option value="40">South Dakota (8,726,178)</option>
+						                <option value="41">Tennessee (8,726,178)</option>
+						                <option value="42">Texas (8,726,178)</option>
+						                <option value="43">Utah (8,726,178)</option>
+						                <option value="44">Virginia (8,726,178)</option>
+						                <option value="45">Vermout (8,726,178)</option>
+						                <option value="46">Washington (8,726,178)</option>
+						                <option value="47">Washington DC (8,726,178)</option>
+						                <option value="48">Wisconsin (8,726,178)</option>
+						                <option value="49">West Virginia (8,726,178)</option>
+						                <option value="50">Wyoming (8,726,178)</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="box-search">
+											<div class="addresses addresses-refine-teams">County</div>
+											<div class="form-refine-select">
+												<a href="#!" class="cross cross-bigger"></a>
+												<a href="#!" class="blue-cross">+</a>
+												<div class="select-box">
+													<select class="select2">
+														<option value="" hidden>Search or Select a County</option>
+														<option value="0">DuPage (685,017)</option>
+														<option value="1">The Loop (134,678)</option>
+														<option value="2">Texas Realty (345,789)</option>
+														<option value="3">Mount Vernon (365,789)</option>
+														<option value="4">Pipeline (355,789)</option>
+														<option value="5">Record (398,789)</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="box-search">
+											<div class="addresses addresses-refine-teams">City</div>
+											<div class="form-refine-select">
+												<a href="#!" class="cross cross-bigger"></a>
+												<a href="#!" class="blue-cross">+</a>
+												<div class="select-box">
+													<select class="select2">
+														<option value="" hidden>Search or Select a City</option>
+														<option value="0">Addison (21,706)</option>
+														<option value="1">Aurora (33,400)</option>
+														<option value="2">Barlett (19,007)</option>
+														<option value="3">Bensenville (10,533)</option>
+														<option value="4">Bloomingdale (17,238)</option>
+														<option value="5">Bollingbrook (1,246)</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="text-uppercase font-weight-bold mt-5">Age</div>
+									<div class="row row-2 align-items-center my-1">
+										<div class="col-4">
+											<div class="addresses font-weight-bold mb-2 delete-element">
+												<a href="#!" class="cross cross-bigger align-middle"></a>
+												<span class="align-middle ml-1">18-24</span>
+											</div>
+											<div class="addresses font-weight-bold mb-2 delete-element">
+												<a href="#!" class="cross cross-bigger align-middle"></a>
+												<span class="align-middle ml-1">25-34</span>
+											</div>
+											<div class="addresses font-weight-bold mb-2 delete-element">
+												<a href="#!" class="cross cross-bigger align-middle"></a>
+												<span class="align-middle ml-1">35-44</span>
+											</div>
+											<div class="addresses mb-2 delete-element">
+												<a href="#!" class="cross cross-bigger align-middle"></a>
+												<span class="align-middle ml-1">45-54</span>
+											</div>
+											<div class="addresses mb-2 delete-element">
+												<a href="#!" class="cross cross-bigger align-middle"></a>
+												<span class="align-middle ml-1">55-64</span>
+											</div>
+											<div class="addresses mb-2 delete-element">
+												<a href="#!" class="cross cross-bigger align-middle"></a>
+												<span class="align-middle ml-1">65+</span>
+											</div>
+										</div>
+										<div class="col-8">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="block">
+							<a href="#!" class="dashboard" data-toggle="collapse" data-target="#collapseTwo">Organizations</a>
+							<div id="collapseTwo" class="collapse" data-parent="#accordionExample">
+								<div class="my-2 py-1">
+									<a class="return align-middle" href="#!"><i class="fas fa-chevron-left align-middle"></i>Back to Search</a>
+									<div class="row align-items-center dashboard-links mt-2 pt-1">
+										<div class="col">
+											<a href="#!">Employment</a>
+										</div>
+										<div class="col-auto font-weight-bold">(13)</div>
+									</div>
+									<div class="row align-items-center dashboard-links mt-2 pt-1">
+										<div class="col">
+											<a href="#!">Real Estate</a>
+										</div>
+										<div class="col-auto font-weight-bold">(6)</div>
+									</div>
+									<div class="row align-items-center dashboard-links-2 mt-2 pt-1">
+										<div class="col">
+											<a href="#!">Voter Registrations</a>
+										</div>
+										<div class="col-auto font-weight-bold">-</div>
+									</div>
+									<div class="row align-items-center dashboard-links mt-2 pt-1">
+										<div class="col">
+											<a href="#!">Voter History</a>
+										</div>
+										<div class="col-auto font-weight-bold">(14)</div>
+									</div>
+									<div class="row align-items-center dashboard-links mt-2 pt-1">
+										<div class="col">
+											<a href="#!">Campaign Contributions</a>
+										</div>
+										<div class="col-auto font-weight-bold">(3)</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="block">
+							<a href="#!" class="dashboard teams" data-toggle="collapse" data-target="#collapseThree">Teams</a>
+							<div id="collapseThree" class="collapse" data-parent="#accordionExample">
+								<div class="my-2 py-1 fz-13">
+									<div class="mb-3">
+										<a class="return align-middle" href="#!"><i class="fas fa-chevron-left align-middle"></i>Back to Search</a>
+									</div>
+									<div class="row row-2 align-items-center mb-3 switch-wrap-box">
+										<div class="col-auto">Mens</div>
+										<div class="col-auto fz-0">
+											<label class="switch-wrap switch-wrap-men mb-0">
+												<input type="checkbox">
+												<span class="lever"></span>
+											</label>
+										</div>
+										<div class="col-auto">Womens</div>
+									</div>
+									<div class="section-teams-hide mens-team">
+										<div class="box-search">
+											<div class="addresses addresses-refine-teams text-uppercase">Level</div>
+											<div class="form-refine-select">
+												<a href="#!" class="cross cross-bigger"></a>
+												<a href="#!" class="blue-cross">+</a>
+												<div class="select-box">
+													<select class="select2">
+														<option value="" hidden>College</option>
+						                <option value="0">College 1</option>
+						                <option value="1">College 2</option>
+						                <option value="2">College 3</option>
+						                <option value="3">College 4</option>
+						                <option value="4">College 5</option>
+						                <option value="5">College 6</option>
+						                <option value="6">College 7</option>
+						                <option value="7">College 8</option>
+						                <option value="8">College 9</option>
+						                <option value="9">College 10</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="box-search">
+											<div class="addresses addresses-refine-teams text-uppercase">Sport</div>
+											<div class="form-refine-select">
+												<a href="#!" class="cross cross-bigger"></a>
+												<a href="#!" class="blue-cross">+</a>
+												<div class="select-box">
+													<select class="select2">
+														<option value="" hidden>Basketball</option>
+														<option value="0">Soccer</option>
+														<option value="1">Football</option>
+														<option value="2">Hockey</option>
+														<option value="3">Tennis</option>
+														<option value="4">Volleyball</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="box-search">
+											<div class="addresses addresses-refine-teams text-uppercase">Association</div>
+											<div class="form-refine-select">
+												<a href="#!" class="cross cross-bigger"></a>
+												<a href="#!" class="blue-cross">+</a>
+												<div class="select-box">
+													<select class="select2">
+														<option value="" hidden>NCAA D1</option>
+														<option value="0">NCAA D1 1</option>
+														<option value="1">NCAA D1 2</option>
+														<option value="2">NCAA D1 3</option>
+														<option value="3">NCAA D1 4</option>
+														<option value="4">NCAA D1 5</option>
+														<option value="5">NCAA D1 6</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="box-search">
+											<div class="addresses addresses-refine-teams text-uppercase">Conference</div>
+											<div class="form-refine-select">
+												<a href="#!" class="cross cross-bigger"></a>
+												<a href="#!" class="blue-cross">+</a>
+												<div class="select-box">
+													<select class="select2">
+														<option value="" hidden>Conference</option>
+														<option value="0">Conference 2</option>
+														<option value="1">Conference 3</option>
+														<option value="2">Conference 4</option>
+														<option value="3">Conference 5</option>
+														<option value="4">Conference 6</option>
+														<option value="5">Conference 7</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>									
+									<div class="section-teams-hide womens-team">
+										<div class="box-search">
+											<div class="addresses addresses-refine-teams text-uppercase">Level (Womens)</div>
+											<div class="form-refine-select">
+												<a href="#!" class="cross cross-bigger"></a>
+												<a href="#!" class="blue-cross">+</a>
+												<div class="select-box">
+													<select class="select2">
+														<option value="" hidden>College</option>
+						                <option value="0">College 1</option>
+						                <option value="1">College 2</option>
+						                <option value="2">College 3</option>
+						                <option value="3">College 4</option>
+						                <option value="4">College 5</option>
+						                <option value="5">College 6</option>
+						                <option value="6">College 7</option>
+						                <option value="7">College 8</option>
+						                <option value="8">College 9</option>
+						                <option value="9">College 10</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="box-search">
+											<div class="addresses addresses-refine-teams text-uppercase">Sport</div>
+											<div class="form-refine-select">
+												<a href="#!" class="cross cross-bigger"></a>
+												<a href="#!" class="blue-cross">+</a>
+												<div class="select-box">
+													<select class="select2">
+														<option value="" hidden>Basketball</option>
+														<option value="0">Soccer</option>
+														<option value="1">Football</option>
+														<option value="2">Hockey</option>
+														<option value="3">Tennis</option>
+														<option value="4">Volleyball</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="box-search">
+											<div class="addresses addresses-refine-teams text-uppercase">Association</div>
+											<div class="form-refine-select">
+												<a href="#!" class="cross cross-bigger"></a>
+												<a href="#!" class="blue-cross">+</a>
+												<div class="select-box">
+													<select class="select2">
+														<option value="" hidden>NCAA D1</option>
+														<option value="0">NCAA D1 1</option>
+														<option value="1">NCAA D1 2</option>
+														<option value="2">NCAA D1 3</option>
+														<option value="3">NCAA D1 4</option>
+														<option value="4">NCAA D1 5</option>
+														<option value="5">NCAA D1 6</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="box-search">
+											<div class="addresses addresses-refine-teams text-uppercase">Conference</div>
+											<div class="form-refine-select">
+												<a href="#!" class="cross cross-bigger"></a>
+												<a href="#!" class="blue-cross">+</a>
+												<div class="select-box">
+													<select class="select2">
+														<option value="" hidden>Conference</option>
+														<option value="0">Conference 2</option>
+														<option value="1">Conference 3</option>
+														<option value="2">Conference 4</option>
+														<option value="3">Conference 5</option>
+														<option value="4">Conference 6</option>
+														<option value="5">Conference 7</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="block">
+							<a href="#!" class="dashboard" data-toggle="collapse" data-target="#collapseFive">Geographies</a>
+							<div id="collapseFive" class="collapse" data-parent="#accordionExample">
+								<div class="refine fz-13 pb-4">
+									<div class="text-uppercase font-weight-bold my-3">Refine Geo</div>
+									<div class="row row-2 align-items-center mb-4">
+										<div class="col-4">
+											<div class="addresses addresses-refine addresses-refine-2">
+												<a href="#!" class="cross cross-bigger align-middle"></a>
+												<span class="align-middle ml-1">State</span>
+											</div>
+										</div>
+										<div class="col-8">
+											<div class="section-teams-hide">
+												<div class="box-search">
+													<div class="form-refine-select">
+														<a href="#!" class="cross cross-bigger"></a>
+														<a href="#!" class="blue-cross">+</a>
+														<div class="select-box">
+															<select class="select2">
+																<option value="" hidden>Illinois</option>
+								                <option value="0">Alaska</option>
+								                <option value="1">Alabama</option>
+								                <option value="2">Arkansas</option>
+								                <option value="3">Arizona</option>
+								                <option value="4">California</option>
+								                <option value="5">Colorado</option>
+								                <option value="6">Connecticut</option>
+								                <option value="7">Delaware</option>
+								                <option value="8">Florida</option>
+								                <option value="9">Georgia</option>
+								                <option value="10">Hawaii</option>
+								                <option value="11">Iowa</option>
+								                <option value="12">Idaho</option>
+								                <option value="13">Illinois</option>
+								                <option value="14">Indiana</option>
+								                <option value="15">Kansas</option>
+								                <option value="16">Kentucky</option>
+								                <option value="17">Louisiana</option>
+								                <option value="18">Massachusetts</option>
+								                <option value="19">Maryland</option>
+								                <option value="20">Maine</option>
+								                <option value="21">Michigan</option>
+								                <option value="22">Minnesota</option>
+								                <option value="23">Missouri</option>
+								                <option value="24">Mississippi</option>
+								                <option value="25">Montana</option>
+								                <option value="26">North Carolina</option>
+								                <option value="27">North Dakota</option>
+								                <option value="28">Nebraska</option>
+								                <option value="29">New Hampshire</option>
+								                <option value="30">New Jersey</option>
+								                <option value="31">New Mexico</option>
+								                <option value="32">Nevada</option>
+								                <option value="33">New York</option>
+								                <option value="34">Ohio</option>
+								                <option value="35">Oklahoma</option>
+								                <option value="36">Oregon</option>
+								                <option value="37">Pennsylvania</option>
+								                <option value="38">Rhode Island</option>
+								                <option value="39">South Carolina</option>
+								                <option value="40">South Dakota</option>
+								                <option value="41">Tennessee</option>
+								                <option value="42">Texas</option>
+								                <option value="43">Utah</option>
+								                <option value="44">Virginia</option>
+								                <option value="45">Vermout</option>
+								                <option value="46">Washington</option>
+								                <option value="47">Washington DC</option>
+								                <option value="48">Wisconsin</option>
+								                <option value="49">West Virginia</option>
+								                <option value="50">Wyoming</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form-refine-select mb-3" id="artem">
+										<select class="select-beast" placeholder="Select a Geography Type">
+											<option value="">Select a Geography Type</option>
+											<option value="0">County</option>
+											<option value="1">State House</option>
+											<option value="2">Senate</option>
+											<option value="3">US Congress</option>
+											<option value="4">Zip</option>
+										</select>
+										<a href="#!" class="blue-cross">+</a>
+									</div>
+									<div class="artem">
+										<div class="form-refine-select mb-3">
+											<select class="select-beast" placeholder="County">
+												<option value="">County</option>
+												<option value="1">County 001</option>
+												<option value="2">County 002</option>
+												<option value="3">County 003</option>
+												<option value="4">County 004</option>
+												<option value="5">County 005</option>
+												<option value="6">County 006</option>
+												<option value="7">County 007</option>
+												<option value="8">County 008</option>
+												<option value="9">County 009</option>
+												<option value="10">County 010</option>
+												<option value="11">County 011</option>
+												<option value="12">County 012</option>
+												<option value="13">County 013</option>
+												<option value="14">County 014</option>
+												<option value="15">County 015</option>
+											</select>
+											<a href="#!" class="blue-cross">+</a>
+										</div>
+										<div class="form-refine-select mb-3">
+											<select class="select-beast" placeholder="State House">
+												<option value="">State House</option>
+												<option value="1">State House 001</option>
+												<option value="2">State House 002</option>
+												<option value="3">State House 003</option>
+												<option value="4">State House 004</option>
+												<option value="5">State House 005</option>
+												<option value="6">State House 006</option>
+												<option value="7">State House 007</option>
+												<option value="8">State House 008</option>
+												<option value="9">State House 009</option>
+												<option value="10">State House 010</option>
+												<option value="11">State House 011</option>
+												<option value="12">State House 012</option>
+												<option value="13">State House 013</option>
+												<option value="14">State House 014</option>
+												<option value="15">State House 015</option>
+											</select>
+											<a href="#!" class="blue-cross">+</a>
+										</div>
+										<div class="form-refine-select mb-3">
+											<select class="select-beast" placeholder="Senate">
+												<option value="">Senate</option>
+												<option value="1">Senate 001</option>
+												<option value="2">Senate 002</option>
+												<option value="3">Senate 003</option>
+												<option value="4">Senate 004</option>
+												<option value="5">Senate 005</option>
+												<option value="6">Senate 006</option>
+												<option value="7">Senate 007</option>
+												<option value="8">Senate 008</option>
+												<option value="9">Senate 009</option>
+												<option value="10">Senate 010</option>
+												<option value="11">Senate 011</option>
+												<option value="12">Senate 012</option>
+												<option value="13">Senate 013</option>
+												<option value="14">Senate 014</option>
+												<option value="15">Senate 015</option>
+											</select>
+											<a href="#!" class="blue-cross">+</a>
+										</div>
+										<div class="form-refine-select mb-3">
+											<select class="select-beast" placeholder="US Congress">
+												<option value="">US Congress</option>
+												<option value="1">US Congress 001</option>
+												<option value="2">US Congress 002</option>
+												<option value="3">US Congress 003</option>
+												<option value="4">US Congress 004</option>
+												<option value="5">US Congress 005</option>
+												<option value="6">US Congress 006</option>
+												<option value="7">US Congress 007</option>
+												<option value="8">US Congress 008</option>
+												<option value="9">US Congress 009</option>
+												<option value="10">US Congress 010</option>
+												<option value="11">US Congress 011</option>
+												<option value="12">US Congress 012</option>
+												<option value="13">US Congress 013</option>
+												<option value="14">US Congress 014</option>
+												<option value="15">US Congress 015</option>
+											</select>
+											<a href="#!" class="blue-cross">+</a>
+										</div>
+										<div class="form-refine-select mb-3">
+											<select class="select-beast" placeholder="Zip">
+												<option value="">Zip</option>
+												<option value="1">Zip 001</option>
+												<option value="2">Zip 002</option>
+												<option value="3">Zip 003</option>
+												<option value="4">Zip 004</option>
+												<option value="5">Zip 005</option>
+												<option value="6">Zip 006</option>
+												<option value="7">Zip 007</option>
+												<option value="8">Zip 008</option>
+												<option value="9">Zip 009</option>
+												<option value="10">Zip 010</option>
+												<option value="11">Zip 011</option>
+												<option value="12">Zip 012</option>
+												<option value="13">Zip 013</option>
+												<option value="14">Zip 014</option>
+												<option value="15">Zip 015</option>
+											</select>
+											<a href="#!" class="blue-cross">+</a>
+										</div>
+									</div>
+									<div class="text-uppercase font-weight-bold mt-4 mb-2">Age</div>
+									<div class="row row-2 align-items-center mt-1 font-weight-bold delete-element">
+										<div class="col">
+											<div class="addresses">
+												<a href="#!" class="cross cross-bigger align-middle"></a>
+												<span class="align-middle ml-1">18-24</span>
+											</div>
+										</div>
+										<div class="col-auto">(180,483)</div>
+									</div>
+									<div class="row row-2 align-items-center mt-1 font-weight-bold delete-element">
+										<div class="col">
+											<div class="addresses">
+												<a href="#!" class="cross cross-bigger align-middle"></a>
+												<span class="align-middle ml-1">25-34</span>
+											</div>
+										</div>
+										<div class="col-auto">(209,871)</div>
+									</div>
+									<div class="row row-2 align-items-center mt-1 font-weight-bold delete-element">
+										<div class="col">
+											<div class="addresses">
+												<a href="#!" class="cross cross-bigger align-middle"></a>
+												<span class="align-middle ml-1">35-44</span>
+											</div>
+										</div>
+										<div class="col-auto">(214,765)</div>
+									</div>
+									<div class="row row-2 align-items-center mt-1 font-weight-bold delete-element">
+										<div class="col">
+											<div class="addresses">
+												<a href="#!" class="cross cross-bigger align-middle"></a>
+												<span class="align-middle ml-1">45-54</span>
+											</div>
+										</div>
+										<div class="col-auto">(308,795)</div>
+									</div>
+									<div class="row row-2 align-items-center mt-1 font-weight-bold delete-element">
+										<div class="col">
+											<div class="addresses">
+												<a href="#!" class="cross cross-bigger align-middle"></a>
+												<span class="align-middle ml-1">55-64</span>
+											</div>
+										</div>
+										<div class="col-auto">(178,316)</div>
+									</div>
+									<div class="row row-2 align-items-center mt-1 font-weight-bold delete-element">
+										<div class="col">
+											<div class="addresses">
+												<a href="#!" class="cross cross-bigger align-middle"></a>
+												<span class="align-middle ml-1">65+</span>
+											</div>
+										</div>
+										<div class="col-auto">(198,520)</div>
+									</div>
+									<div class="text-uppercase font-weight-bold mt-5 mb-2">Campaign Contributions</div>
+									<div class="row row-2 align-items-center delete-element mt-1">
+										<div class="col">
+											<div class="addresses">
+												<a href="#!" class="cross cross-bigger align-middle invisible"></a>
+												<span class="align-middle ml-1">$1-$99</span>
+											</div>
+										</div>
+										<div class="col-auto">(180,483)</div>
+									</div>
+									<div class="row row-2 align-items-center delete-element mt-1">
+										<div class="col">
+											<div class="addresses">
+												<a href="#!" class="cross cross-bigger align-middle invisible"></a>
+												<span class="align-middle ml-1">$100-$499</span>
+											</div>
+										</div>
+										<div class="col-auto">(209,871)</div>
+									</div>
+									<div class="row row-2 align-items-center delete-element mt-1">
+										<div class="col">
+											<div class="addresses">
+												<a href="#!" class="cross cross-bigger align-middle invisible"></a>
+												<span class="align-middle ml-1">$500-$999</span>
+											</div>
+										</div>
+										<div class="col-auto">(214,765)</div>
+									</div>
+									<div class="row row-2 align-items-center delete-element mt-1 font-weight-bold">
+										<div class="col">
+											<div class="addresses">
+												<a href="#!" class="cross cross-bigger align-middle"></a>
+												<span class="align-middle ml-1">$1,000-$4,999</span>
+											</div>
+										</div>
+										<div class="col-auto">(308,795)</div>
+									</div>
+									<div class="row row-2 align-items-center delete-element mt-1 font-weight-bold">
+										<div class="col">
+											<div class="addresses">
+												<a href="#!" class="cross cross-bigger align-middle"></a>
+												<span class="align-middle ml-1">$5,000-$9,999</span>
+											</div>
+										</div>
+										<div class="col-auto">(178,316)</div>
+									</div>
+									<div class="row row-2 align-items-center delete-element mt-1">
+										<div class="col">
+											<div class="addresses">
+												<a href="#!" class="cross cross-bigger align-middle invisible"></a>
+												<span class="align-middle ml-1">$10,000+</span>
+											</div>
+										</div>
+										<div class="col-auto">(198,520)</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="block">
+							<a href="#!" class="dashboard" data-toggle="collapse" data-target="#collapseFOIA" aria-expanded="true">FOIA</a>
+							<div id="collapseFOIA" class="collapse show" data-parent="#accordionExample">
+								<div class="refine fz-13 pb-5">
+									<div class="mb-4">
+				        		<button class="btn btn-primary btn-subject btn-send btn-block mt-3">Mark as Unread</button>
+									</div>
+									<div class="mb-4">
+										<div class="text-uppercase font-weight-bold mt-3 mb-1">Send Status</div>
+										<div class="mb-1">
+											<img src="img/foia-1.png" alt="" class="align-middle" width="16">
+											<span class="ml-1 align-middle">Bounced</span>
+										</div>
+										<div class="mb-1">
+											<img src="img/foia-2.png" alt="" class="align-middle" width="16">
+											<span class="ml-1 align-middle">Pending</span>
+										</div>
+										<div class="mb-1">
+											<img src="img/foia-3.png" alt="" class="align-middle" width="16">
+											<span class="ml-1 align-middle">Sent</span>
+										</div>
+									</div>
+									<div class="mb-4">
+										<div class="text-uppercase font-weight-bold mt-3 mb-1">Replie Status</div>
+										<div class="mb-1">
+											<img src="img/foia-4.png" alt="" class="align-middle" width="16">
+											<span class="ml-1 align-middle">Replied</span>
+										</div>
+										<div class="mb-1">
+											<img src="img/foia-5.png" alt="" class="align-middle" width="16">
+											<span class="ml-1 align-middle">No Response</span>
+										</div>
+									</div>
+									<div class="mb-4">
+										<div class="text-uppercase font-weight-bold mt-3 mb-1">Response Status</div>
+										<div class="form-refine-select mb-3">
+											<img src="img/arrow-gray.png" alt="" class="arrow-gray">
+											<div class="select-box">
+												<select class="select2">
+													<option value="" hidden>Update Response Status</option>
+					                <option value="0">Processing</option>
+					                <option value="1">Reviewing</option>
+					                <option value="2">Wrong Data</option>
+					                <option value="3">Payment Required</option>
+					                <option value="4">Completed</option>
+					                <option value="5">Denied</option>
+												</select>
+											</div>
+										</div>
+										<div class="mb-1">
+											<img src="img/foia-6.png" alt="" class="align-middle" width="16">
+											<span class="ml-1 align-middle">Processing</span>
+										</div>
+										<div class="mb-1">
+											<img src="img/foia-7.png" alt="" class="align-middle" width="16">
+											<span class="ml-1 align-middle">Reviewing</span>
+										</div>
+										<div class="mb-1">
+											<img src="img/foia-8.png" alt="" class="align-middle" width="16">
+											<span class="ml-1 align-middle">Wrong Data</span>
+										</div>
+										<div class="mb-1">
+											<img src="img/foia-9.png" alt="" class="align-middle" width="16">
+											<span class="ml-1 align-middle">Payment Required</span>
+										</div>
+										<div class="mb-1">
+											<img src="img/foia-10.png" alt="" class="align-middle" width="16">
+											<span class="ml-1 align-middle">Completed</span>
+										</div>
+										<div class="mb-1">
+											<img src="img/foia-11.png" alt="" class="align-middle" width="16">
+											<span class="ml-1 align-middle">Denied</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</aside>
+
+		<section class="section">
+
+			<div class="head">
+				<div class="row align-items-center">
+					<div class="col">
+						<span class="font-weight-bold fz-18">FOIA</span>
+					</div>
+					<div class="col-auto">
+						<a href="#!" class="btn btn-primary" data-toggle="modal" data-target="#modal">Create New FOIA</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="cart fz-13 py-4 flex-grow-1 border-shadow mb-4">
+					<h4 class="fz-14">FOIA Email</h4>
+					<p class="mb-4">Below is the original email that was sent as part of the <b>State House of Rep FOIA</b> campaign.</p>
+					<div class="section-gray">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium repellat ab exercitationem.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium repellat.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo assumenda maiores laboriosam velit accusantium.</p>
+						<p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Enim necessitatibus blanditiis labore, velit quis sit aspernatur voluptatibus neque? Vero alias tempore ducimus maiores, temporibus aliquam quidem animi incidunt tempora consectetur?</p>
+					</div>
+				</div>
+
+				<div class="cart fz-13 py-4 flex-grow-1 border-shadow mb-4">
+					<div class="row row-1">
+						<div class="col-auto">
+							<div class="pill-user user-pink">DA</div>
+						</div>
+						<div class="col">
+							<div class="row">
+								<div class="col-md">
+									<h4 class="font-weight-bold">MEDIA INTERVIEW REQUEST: Rep. Elijah Behnke files bill banning teaching of critical race theory at Wisconsin universities</h4>
+									<div class="fz-12 mb-4">
+										<div class="row row-1">
+											<div class="col-2 col-lg-1 font-weight-bold">From:</div>
+											<div class="col">Deb Anraca /FOIA@legis.wi.gov/</div>
+										</div>
+										<div class="row row-1">
+											<div class="col-2 col-lg-1 font-weight-bold">To:</div>
+											<div class="col">Vince Espinoza /Vince@thesconitimes.com/</div>
+										</div>
+									</div>
+									<div class="mb-4">
+										<p>Sarah,</p>
+										<p>Thank you for reaching out regarding this important topic.</p>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis iure fugiat, nisi? Beatae fugiat aperiam nisi.</p>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Quisquam necessitatibus, eius earum doloribus repudiandae saepe quae deleniti, tenetur facilis possimus. Unde dolores, esse? Quas quaerat voluptas omnis quis tenetur. Rerum!</p>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Quisquam necessitatibus, eius earum doloribus repudiandae saepe quae deleniti, tenetur facilis possimus. Unde dolores, esse? Quas quaerat voluptas omnis quis tenetur.</p>
+										<p>John Willis <br> FOIA Officer <br> Wisconsin House of Representatives</p>
+									</div>
+									<div class="section-downloads">
+										<div class="row row-1">
+											<div class="col-sm-6 col-xl-5 mb-3">
+												<div class="box-download">
+													<div class="row row-1 h-100">
+														<div class="col-auto">
+															<div class="pill-download pill-pdf">PDF</div>
+														</div>
+														<div class="col d-flex flex-column">
+															<div class="title mt-1 mb-3">FOIA_378041_2_8_2023_Vince_Espinoza.pdf</div>
+															<div class="mt-auto">
+																<a href="#!" class="a-download">
+																	<img src="img/arrow-download.png" alt="" width="14">
+																</a>
+																<span class="gray ml-2">673 KB</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-6 col-xl-5 mb-3">
+												<div class="box-download">
+													<div class="row row-1 h-100">
+														<div class="col-auto">
+															<div class="pill-download pill-csv">CSV</div>
+														</div>
+														<div class="col d-flex flex-column">
+															<div class="title mt-1 mb-3">FOIA_378041_2_8_2023_Vince_Espinoza.csv</div>
+															<div class="mt-auto">
+																<a href="#!" class="a-download">
+																	<img src="img/arrow-download.png" alt="" width="14">
+																</a>
+																<span class="gray ml-2">291 KB</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-6 col-xl-5 mb-3">
+												<div class="box-download">
+													<div class="row row-1 h-100">
+														<div class="col-auto">
+															<div class="pill-download pill-png">PNG</div>
+														</div>
+														<div class="col d-flex flex-column">
+															<div class="title mt-1 mb-3">FOIA_378041_2_8_2023_Vince_Espinoza.png</div>
+															<div class="mt-auto">
+																<a href="#!" class="a-download">
+																	<img src="img/arrow-download.png" alt="" width="14">
+																</a>
+																<span class="gray ml-2">673 KB</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-6 col-xl-5 mb-3">
+												<div class="box-download">
+													<div class="row row-1 h-100">
+														<div class="col-auto">
+															<div class="pill-download pill-zip">ZIP</div>
+														</div>
+														<div class="col d-flex flex-column">
+															<div class="title mt-1 mb-3">FOIA_378041_2_8_2023_Vince_Espinoza.zip</div>
+															<div class="mt-auto">
+																<a href="#!" class="a-download">
+																	<img src="img/arrow-download.png" alt="" width="14">
+																</a>
+																<span class="gray ml-2">12.6 MB</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-6 col-xl-5 mb-3">
+												<div class="box-download">
+													<div class="row row-1 h-100">
+														<div class="col-auto">
+															<div class="pill-download pill-xlsx">XLSX</div>
+														</div>
+														<div class="col d-flex flex-column">
+															<div class="title mt-1 mb-3">FOIA_378041_2_8_2023_Vince_Espinoza.xlsx</div>
+															<div class="mt-auto">
+																<a href="#!" class="a-download">
+																	<img src="img/arrow-download.png" alt="" width="14">
+																</a>
+																<span class="gray ml-2">1.1 MB</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-auto fz-12 text-right">
+									<b>Feb 8, 2023</b><br>
+									<span>10:12am</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="cart fz-13 py-4 flex-grow-1 border-shadow mb-4">
+					<div class="row row-1">
+						<div class="col-auto">
+							<div class="pill-user user-violet">VE</div>
+						</div>
+						<div class="col">
+							<div class="row">
+								<div class="col-md">
+									<h4 class="font-weight-bold">FOIA REQUEST: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima quas, recusandae.</h4>
+									<div class="fz-12 mb-4">
+										<div class="row row-1">
+											<div class="col-2 col-lg-1 font-weight-bold">From:</div>
+											<div class="col">Vince Espinoza /Vince@thesconitimes.com/</div>
+										</div>
+										<div class="row row-1">
+											<div class="col-2 col-lg-1 font-weight-bold">To:</div>
+											<div class="col">FOIA Officer /FOIA@legis.wi.gov/</div>
+										</div>
+									</div>
+									<div class="mb-4">
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Quisquam necessitatibus, eius earum doloribus repudiandae saepe quae deleniti, tenetur facilis possimus. Unde dolores, esse? Quas quaerat voluptas omnis quis tenetur. Rerum!</p>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Quisquam necessitatibus, eius earum doloribus repudiandae saepe quae deleniti, tenetur facilis possimus. Unde dolores, esse? Quas quaerat voluptas omnis quis tenetur.</p>
+									</div>
+								</div>
+								<div class="col-md-auto fz-12 text-right">
+									<b>Feb 8, 2023</b><br>
+									<span>10:12am</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		
+		<div class="modal fade" id="modal" tabindex="-1">
+		  <div class="modal-dialog modal-dialog-centered modal-lg">
+		    <div class="modal-content">
+		      <div class="modal-header border-0 pb-3">
+						<div class="title">New FOIA</div>
+		      </div>
+		      <div class="modal-body py-0">
+		      	<p>Select a FOIA Type, define a FOIA Series name and assign orgs to your FOIA. You can select orgs one-by-one or select from a predefined list of orgs.</p>
+						<div class="row align-items-center mb-2">
+							<div class="col-sm-3 fz-13 font-weight-bold mb-1 mb-sm-0">
+								<div>Select Type</div>
+							</div>
+							<div class="col">
+	              <input type="text" class="form-control" placeholder="Select a Type">
+							</div>
+						</div>
+						<div class="row align-items-center mb-2">
+							<div class="col-sm-3 fz-13 font-weight-bold mb-1 mb-sm-0">
+								<div>FOIA Series</div>
+							</div>
+							<div class="col">
+	              <input type="text" class="form-control" placeholder="Enter a Series Name">
+							</div>
+						</div>
+						<div class="row align-items-center mb-2">
+							<div class="col-sm-3 fz-13 font-weight-bold mb-1 mb-sm-0">
+								<div>Orgs</div>
+							</div>
+							<div class="col">
+	              <input type="text" class="form-control" placeholder="Search for an Org">
+							</div>
+						</div>
+						<div class="row align-items-center mb-2">
+							<div class="col-sm-3 fz-13 font-weight-bold mb-1 mb-sm-0">
+								<div>Mail List</div>
+							</div>
+							<div class="col">
+	              <input type="text" class="form-control" placeholder="Search for an Org List">
+							</div>
+						</div>
+						<p class="pt-4">Build your FOIA email. Greetings, signatures, intros and legalese will be automatically inserted.</p>
+						<div class="row align-items-center mb-2">
+							<div class="col-sm-3 fz-13 font-weight-bold mb-1 mb-sm-0">
+								<div>Email Subject</div>
+							</div>
+							<div class="col">
+	              <input type="text" class="form-control" placeholder="Enter Email Subject">
+							</div>
+						</div>
+						<div class="row align-items-center mb-2">
+							<div class="col-sm-3 fz-13 font-weight-bold mb-1 mb-sm-0">
+								<div>Email Intro</div>
+							</div>
+							<div class="col">
+	              <input type="text" class="form-control" placeholder="Select Intro Type">
+							</div>
+						</div>	
+						<div class="row align-items-center pt-2 mb-2">
+							<div class="col-4 col-sm-3 fz-13 font-weight-bold">
+								<div>State Pub Override</div>
+							</div>
+							<div class="col check-login">
+	              <label class="form-check-label">	
+		              <input type="checkbox" name="overide">
+		              <span class="fas fa-check fz-14"></span>
+		            </label>
+							</div>
+						</div>
+						<div class="row pt-3 mb-2">
+							<div class="col-lg-3 fz-13 font-weight-bold mb-2 mb-lg-0">
+								<div>Email Body</div>
+							</div>
+							<div class="col-lg">
+	              <p>Only enter the data being requested. Do not enter a greeting, signature, intro, legalese or fee waver copy.</p>
+								<div class="message-box">
+									<div class="message-header">
+										<div class="row row-1">
+											<div class="col-auto fz-0">
+												<div class="message-pill">
+													<a href="#!" class="pill">
+														<i class="fa-solid fa-b"></i>
+													</a>
+													<a href="#!" class="pill">
+														<i class="fa-solid fa-italic"></i>
+													</a>
+													<a href="#!" class="pill">
+														<i class="fa-solid fa-underline"></i>
+													</a>
+													<a href="#!" class="pill">
+														<i class="fa-solid fa-a"></i>
+													</a>
+												</div>
+											</div>
+											<div class="col-auto fz-0">
+												<div class="message-pill">
+													<a href="#!" class="pill">
+														<i class="fa-sharp fa-solid fa-align-left"></i>
+													</a>
+													<a href="#!" class="pill">
+														<i class="fa-sharp fa-solid fa-align-center"></i>
+													</a>
+													<a href="#!" class="pill">
+														<i class="fa-solid fa-list-ol"></i>
+													</a>
+													<a href="#!" class="pill">
+														<i class="fa-solid fa-paragraph"></i>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+		            	<textarea class="form-control textarea-message" placeholder="Enter Email Subject" rows="5"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="row align-items-center pt-3 mb-2">
+							<div class="col-4 col-sm-3 fz-13 font-weight-bold">
+								<div>Fee Waver</div>
+							</div>
+							<div class="col check-login">
+	              <label class="form-check-label">	
+		              <input type="checkbox" name="waver">
+		              <span class="fas fa-check fz-14"></span>
+		            </label>
+							</div>
+						</div>
+						<p class="pt-4">Build the FOIAs schedule. Schedules can be editted at any time.</p>
+						<div class="row pt-2 mb-4">
+							<div class="col-lg-3 fz-13 font-weight-bold mb-2 mb-lg-0">
+								<div>Schedule Builder</div>
+							</div>
+							<div class="col-lg">
+								<div class="message-box">
+		            	<textarea class="form-control textarea-message textarea-schedule" placeholder="Schedule Builder Feature From Events" rows="5"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="row align-items-center mb-2">
+							<div class="col-sm-3 fz-13 font-weight-bold mb-1 mb-sm-0">
+								<div>No Response Schedule</div>
+							</div>
+							<div class="col">
+	              <input type="text" class="form-control" placeholder="If no response, select when email should resend">
+							</div>
+						</div>
+						<div class="pt-4">
+			        <button class="btn btn-primary mr-2">Save</button>
+			        <button class="btn btn-outline-primary mr-2">Preview</button>
+			        <button class="btn btn-outline-danger mr-auto" data-dismiss="modal">Cancel</button>
+						</div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+		<script src="https://unpkg.com/drag-on-drop@3.3.2/dist/dragon-drop.js"></script>
+		<script src="https://cdn.tutorialjinni.com/selectize.js/0.12.6/js/standalone/selectize.min.js"></script>
+		<script src="https://cdn.tutorialjinni.com/selectize.js/0.12.6/js/selectize.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>

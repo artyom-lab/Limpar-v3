@@ -1301,7 +1301,7 @@ h4, .h4 {
     border-radius: 8px; }
 
 .btn-continue {
-  background: #ee1c3f;
+  background: #ff0050;
   border-radius: 100px;
   color: #FFF;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
@@ -1604,9 +1604,132 @@ h4, .h4 {
   padding: 10px 15px !important;
   border: 0;
   min-height: 245px;
-  resize: none; }
+  resize: none;
+  border-radius: 8px;
+  font-size: 13px;
+  border-color: #c8ced4; }
+  .textarea-message::-webkit-input-placeholder {
+    color: #c8ced4; }
+  .textarea-message::-moz-placeholder {
+    color: #c8ced4; }
+  .textarea-message:-ms-input-placeholder {
+    color: #c8ced4; }
+  .textarea-message:focus {
+    box-shadow: none; }
 
 .textarea-schedule {
   min-height: 220px; }
+
+.section-gray {
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
+  background: #f9f9f9; }
+  .section-gray p:last-child {
+    margin-bottom: 0; }
+
+.pill-user {
+  display: inline-block;
+  border-radius: 100px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #FFF; }
+  .pill-user.user-violet {
+    background: #677ac0; }
+  .pill-user.user-pink {
+    background: #ff0050; }
+
+.btn-subject {
+  border-radius: 5px;
+  font-size: 14px;
+  transition: 0.3s;
+  padding: 6px 12px;
+  min-width: 90px;
+  border: 2px solid;
+  font-weight: bold; }
+  .btn-subject.btn-send {
+    color: #FFF;
+    border-color: #0081ff;
+    background: #0081ff; }
+    .btn-subject.btn-send:hover {
+      opacity: 0.7; }
+  .btn-subject.btn-cancel {
+    color: #ff0050;
+    border-color: #ff0050;
+    background: #FFF; }
+    .btn-subject.btn-cancel:hover {
+      color: #FFF;
+      background: #ff0050; }
+
+.section-downloads {
+  border-top: 2px dashed #f9f9f9;
+  padding-top: 20px; }
+  .section-downloads .box-download {
+    background: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #dcdcdc;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%; }
+    .section-downloads .box-download .title {
+      word-break: break-all; }
+    .section-downloads .box-download .a-download {
+      border-radius: 4px;
+      background: #676767;
+      color: #FFF;
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      text-align: center;
+      line-height: 30px; }
+      .section-downloads .box-download .a-download:hover {
+        opacity: 0.7; }
+
+@media (min-width: 1200px) {
+  .col-xl-5 {
+    flex: 0 0 30%;
+    max-width: 30%; } }
+@media (min-width: 1400px) {
+  .col-xl-5 {
+    flex: 0 0 20%;
+    max-width: 20%; } }
+
+.pill-download {
+  display: inline-block;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 7px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  color: #FFF; }
+  .pill-download.pill-pdf {
+    background: #ed230d; }
+  .pill-download.pill-csv {
+    background: #00bd5f; }
+  .pill-download.pill-png {
+    background: #0096d5; }
+  .pill-download.pill-zip {
+    background: #000; }
+  .pill-download.pill-xlsx {
+    background: #00bd5f; }
+
+.arrow-gray {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  cursor: pointer;
+  transform: translateY(-50%);
+  z-index: 100;
+  width: 10px;
+  display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */
