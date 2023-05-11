@@ -1275,7 +1275,7 @@ h4, .h4 {
     width: 100%; }
 
 .form-login label {
-  margin-bottom: 0; }
+  margin-bottom: -1px; }
   .form-login label .form-control {
     height: 65px;
     padding: 22px;
