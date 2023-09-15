@@ -64,6 +64,7 @@ a {
   font-size: 24px;
   font-weight: 900;
   width: 280px;
+  z-index: 1031;
   transition: 0.3s; }
   @media (max-width: 991.98px) {
     .sidebar-top {
@@ -1485,7 +1486,8 @@ h4, .h4 {
     display: none; }
 
 .label-read {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  cursor: pointer; }
   .label-read input[type="checkbox"], .label-read input[type="radio"] {
     display: none; }
     .label-read input[type="checkbox"] ~ .f, .label-read input[type="radio"] ~ .f {
