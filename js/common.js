@@ -126,6 +126,29 @@ $(document).ready(function() {
 
 	$('.select-beast').selectize({});
 
+// CALENDAR
+
+	var start = moment("05/12/2021"),
+	    end   = moment("06/11/2028");
+
+	function cb(start, end) {
+	    $('#reportrange').html(start.format('MMM D, YYYY') + ' - ' + end.format('MMM D, YYYY'));
+	};
+
+	$('#reportrange').daterangepicker({
+	    startDate: start,
+	    endDate: end,
+	}, cb);
+
+	cb(start, end);
+
+	$('input[name="birthday1"], input[name="birthday2"]').daterangepicker({
+	  singleDatePicker: true,
+	  showDropdowns: true,
+	  minYear: 2000,
+	  maxYear: parseInt(moment().format('YYYY'),10)
+	});
+
 // SELECT2
 
 (function($) {
@@ -199,15 +222,11 @@ $(document).ready(function() {
   };
 })(window.jQuery);
 
-	$(document).ready(function() {
-	  $("select.select2").select2({
-	    dropdownPosition: 'below'
-	  });
-		$("select.search-hide").select2({
-			minimumResultsForSearch: Infinity,
-		});
 
-	});
+	  $("select.select2").select2({
+	    dropdownPosition: 'below',
+	    allowClear: true
+	  });
 
 	$('#artem select').on('change', function () {
 		var val = $(this).find('option').attr('value');
@@ -229,29 +248,6 @@ $(document).ready(function() {
 		$(this).closest('.box-search').nextAll().hide();
 		$(this).hide();
 		$(this).closest('.box-search').nextAll().find('.cross-bigger').hide();
-	});
-
-// CALENDAR
-
-	var start = moment("05/12/2021"),
-	    end   = moment("06/11/2028");
-
-	function cb(start, end) {
-	    $('#reportrange').html(start.format('MMM D, YYYY') + ' - ' + end.format('MMM D, YYYY'));
-	};
-
-	$('#reportrange').daterangepicker({
-	    startDate: start,
-	    endDate: end,
-	}, cb);
-
-	cb(start, end);
-
-	$('input[name="birthday1"], input[name="birthday2"]').daterangepicker({
-	  singleDatePicker: true,
-	  showDropdowns: true,
-	  minYear: 2000,
-	  maxYear: parseInt(moment().format('YYYY'),10)
 	});
 
 });
